@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
+<p class="p1"><span class="s1">content="</span></p>
+<p class="p1"><span class="s1">default-src 'self';</span></p>
+<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
+<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
+<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
+<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
+<p class="p1"><span class="s1">object-src 'none';</span></p>
+<p class="p1"><span class="s1">base-uri 'self';</span></p>
+<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
+<p class="p1"><span class="s1">form-action 'self';</span></p>
+<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
+<p class="p1"><span class="s1">"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="referrer" content="no-referrer"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna — Philanthropy&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.dark{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.outer{min-height:100vh;padding:clamp(4px,1vw,8px);}</span></p>
+<p class="p1"><span class="s1">.inner{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(8px,2vw,16px));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:flex-start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow:hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-top:clamp(120px,16vh,160px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.lang{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.rtl .lang{right:auto;left:clamp(18px,3vw,40px);}</span></p>
+<p class="p1"><span class="s1">.lang span{margin-left:clamp(10px,1.5vw,16px);cursor:pointer;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.content{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:60%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width:800px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:left;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-bottom:140px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.back-top{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom:clamp(16px,3vh,22px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.title{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(20px,2.5vw,28px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.text{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(16px,3vh,22px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.3vw,15px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line-height:1.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>white-space:pre-line;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.lang-fade-out{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .35s cubic-bezier(.4,0,.2,1),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .35s cubic-bezier(.4,0,.2,1);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.lang-fade-in{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .5s cubic-bezier(.4,0,.2,1),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .5s cubic-bezier(.4,0,.2,1);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.actions{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(40px,6vh,55px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.footer{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(14px,3vh,20px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.26;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.cursor-dot{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height:4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index:9999;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="back-top" id="backBtnTop"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="title" id="title"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="text" id="text"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="modeBtn"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="privacyBtn"&gt;&lt;/span&gt; |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="termsBtn"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">"use strict";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
+<p class="p1"><span class="s1">const translations = {</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">en:{</span></p>
+<p class="p1"><span class="s1">title:"Philanthropy",</span></p>
+<p class="p1"><span class="s1">text:`At Harmonia Fortuna, our commitment to responsible stewardship extends beyond capital allocation. We recognize that long term prosperity is inseparable from social resilience, environmental sustainability, and equitable opportunity. Philanthropy is a natural extension of our philosophy.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">We believe that enduring financial success must contribute meaningfully to the communities and ecosystems within which we operate.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Our Approach</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Our philanthropic strategy is guided by the same principles that define our investment discipline: rigor, accountability, partnership, and long term impact.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Rather than pursuing short term visibility, we prioritize initiatives capable of generating measurable and sustainable outcomes. We seek to deploy resources thoughtfully, supporting programs that demonstrate structural relevance, operational integrity, and scalable potential.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Strategic Areas of Focus</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Education and Human Capital Development</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">We support initiatives that expand access to high quality education, vocational training, and skills development particularly for underserved populations.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Environmental Stewardship</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Our philanthropic efforts support conservation, renewable energy innovation, and initiatives designed to protect biodiversity and mitigate climate impact.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Social Equity and Community Stability</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">We contribute to programs that promote inclusion, social cohesion, and equitable access to opportunity.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Institutional Commitment</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">A defined allocation of our annual performance is dedicated to philanthropic initiatives aligned with our core principles.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Building a Sustainable Future</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Through disciplined philanthropy, Harmonia Fortuna seeks to harmonize financial achievement with social contribution and strengthen communities for generations to come.`,</span></p>
+<p class="p1"><span class="s1">back:"← Back",</span></p>
+<p class="p1"><span class="s1">dark:"Dark Mode",</span></p>
+<p class="p1"><span class="s1">privacy:"Privacy Policy",</span></p>
+<p class="p1"><span class="s1">terms:"Terms of Service"</span></p>
+<p class="p1"><span class="s1">},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">cn:{</span></p>
+<p class="p1"><span class="s1">title:"慈善事业",</span></p>
+<p class="p1"><span class="s1">text:`在 Harmonia Fortuna，我们对责任管理的承诺不仅体现在资本配置之中。慈善是我们核心理念的自然延伸。</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">我们相信，真正持久的财务成功必须为社会与环境创造价值。</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">我们的理念</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">我们的慈善战略遵循严谨、问责与长期影响原则。</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">重点领域</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">教育与人力资本发展 <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">环境保护 <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">社会公平与社区稳定</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">制度性承诺</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">我们将年度业绩的一部分用于慈善事业。</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">共建可持续未来</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Harmonia Fortuna 致力于实现财务成就与社会贡献的统一。`,</span></p>
+<p class="p1"><span class="s1">back:"← 返回",</span></p>
+<p class="p1"><span class="s1">dark:"深色模式",</span></p>
+<p class="p1"><span class="s1">privacy:"隐私政策",</span></p>
+<p class="p1"><span class="s1">terms:"服务条款"</span></p>
+<p class="p1"><span class="s1">},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">ru:{</span></p>
+<p class="p1"><span class="s1">title:"Филантропия",</span></p>
+<p class="p1"><span class="s1">text:`В Harmonia Fortuna филантропия является естественным продолжением нашей философии.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Мы убеждены, что долгосрочный финансовый успех должен приносить пользу обществу и окружающей среде.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Ключевые направления</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Образование <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">Экология <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">Социальная устойчивость</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Институциональная приверженность</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Часть ежегодных результатов направляется на филантропические цели.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Устойчивое будущее</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Мы стремимся объединить финансовый успех и общественное благо.`,</span></p>
+<p class="p1"><span class="s1">back:"← Назад",</span></p>
+<p class="p1"><span class="s1">dark:"Тёмный режим",</span></p>
+<p class="p1"><span class="s1">privacy:"Конфиденциальность",</span></p>
+<p class="p1"><span class="s1">terms:"Условия обслуживания"</span></p>
+<p class="p1"><span class="s1">},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">ar:{</span></p>
+<p class="p1"><span class="s1">title:"العمل الخيري",</span></p>
+<p class="p1"><span class="s1">text:`يمثل العمل الخيري في Harmonia Fortuna امتداداً طبيعياً لفلسفتنا المؤسسية.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">نؤمن بأن النجاح المالي يجب أن يسهم في خدمة المجتمع وحماية البيئة.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">مجالات التركيز</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">التعليم <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">الاستدامة البيئية <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">العدالة الاجتماعية</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">الالتزام المؤسسي</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">نخصص جزءاً من نتائجنا السنوية للأعمال الخيرية.</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">نحو مستقبل مستدام</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">نسعى إلى تحقيق التوازن بين النجاح المالي وخدمة المجتمع.`,</span></p>
+<p class="p1"><span class="s1">back:"← رجوع",</span></p>
+<p class="p1"><span class="s1">dark:"الوضع الداكن",</span></p>
+<p class="p1"><span class="s1">privacy:"سياسة الخصوصية",</span></p>
+<p class="p1"><span class="s1">terms:"الشروط"</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function setLang(lang){</span></p>
+<p class="p1"><span class="s1">const elements=[title,text,backBtnTop,modeBtn,privacyBtn,termsBtn];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">elements.forEach(el=&gt;{</span></p>
+<p class="p1"><span class="s1">el.classList.remove("lang-fade-in");</span></p>
+<p class="p1"><span class="s1">el.classList.add("lang-fade-out");</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">setTimeout(()=&gt;{</span></p>
+<p class="p1"><span class="s1">document.body.classList.toggle("rtl",lang==="ar");</span></p>
+<p class="p1"><span class="s1">document.documentElement.lang=lang;</span></p>
+<p class="p1"><span class="s1">const t=translations[lang];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">title.textContent=t.title;</span></p>
+<p class="p1"><span class="s1">text.textContent=t.text;</span></p>
+<p class="p1"><span class="s1">backBtnTop.textContent=t.back;</span></p>
+<p class="p1"><span class="s1">modeBtn.textContent=t.dark;</span></p>
+<p class="p1"><span class="s1">privacyBtn.textContent=t.privacy;</span></p>
+<p class="p1"><span class="s1">termsBtn.textContent=t.terms;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">elements.forEach(el=&gt;{</span></p>
+<p class="p1"><span class="s1">el.classList.remove("lang-fade-out");</span></p>
+<p class="p1"><span class="s1">el.classList.add("lang-fade-in");</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p1"><span class="s1">},200);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("langMenu").addEventListener("click",e=&gt;{</span></p>
+<p class="p1"><span class="s1">if(e.target.dataset.lang) setLang(e.target.dataset.lang);</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById("modeBtn").addEventListener("click",()=&gt;document.body.classList.toggle("dark"));</span></p>
+<p class="p1"><span class="s1">document.getElementById("backBtnTop").addEventListener("click",()=&gt;window.location.href="menu.html");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">setLang("en");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Smooth cursor */</span></p>
+<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
+<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
+<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
+<p class="p1"><span class="s1">(function animateCursor(){</span></p>
+<p class="p1"><span class="s1">cx+=(tx-cx)*0.15;</span></p>
+<p class="p1"><span class="s1">cy+=(ty-cy)*0.15;</span></p>
+<p class="p1"><span class="s1">cursor.style.left=cx+"px";</span></p>
+<p class="p1"><span class="s1">cursor.style.top=cy+"px";</span></p>
+<p class="p1"><span class="s1">requestAnimationFrame(animateCursor);</span></p>
+<p class="p1"><span class="s1">})();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>

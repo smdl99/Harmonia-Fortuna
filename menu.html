@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
+<p class="p1"><span class="s1">content="</span></p>
+<p class="p1"><span class="s1">default-src 'self';</span></p>
+<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
+<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
+<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
+<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
+<p class="p1"><span class="s1">object-src 'none';</span></p>
+<p class="p1"><span class="s1">base-uri 'self';</span></p>
+<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
+<p class="p1"><span class="s1">form-action 'self';</span></p>
+<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
+<p class="p1"><span class="s1">"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna — Menu&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--game:#000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.dark{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--game:#f2f2f2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.outer{min-height:100vh;padding:clamp(4px,1vw,8px);}</span></p>
+<p class="p1"><span class="s1">.inner{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(8px,2vw,16px));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;justify-content:center;align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;overflow:hidden;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.lang{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body.rtl .lang{right:auto;left:clamp(18px,3vw,40px);}</span></p>
+<p class="p1"><span class="s1">.lang span{margin-left:clamp(10px,1.5vw,16px);cursor:pointer;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.content{text-align:center;padding:0 clamp(10px,4vw,40px);}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">canvas{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:min(260px,40vw);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width:280px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>aspect-ratio:3/2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 auto clamp(18px,3vh,26px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.sections{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(14px,1.8vw,18px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:.8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.75;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.sections span{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 clamp(6px,1vw,10px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.sections span::after{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>content:'';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:-2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height:1px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:currentColor;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.sections span:hover::after{width:100%;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.lang-fade-out{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.25s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.lang-fade-in{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.35s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.address{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(20px,3vh,26px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(11px,1.2vw,13px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.55;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line-height:1.5;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.clocks{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(34px,4vh,44px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap:clamp(36px,6vw,70px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.clock{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>flex-direction:column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:flex-start;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.clock-top{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap:6px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.clock-svg{width:13px;height:13px;}</span></p>
+<p class="p1"><span class="s1">.clock-hand{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>stroke:currentColor;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>stroke-linecap:round;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform-origin:50% 50%;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.time-text{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,.9vw,11px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.location-label{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-left:19px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(5px,.55vw,7px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.18;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:1px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.actions{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;bottom:clamp(40px,6vh,55px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;transform:translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);opacity:.6;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.actions span{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 clamp(4px,1vw,8px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.actions span::after,</span></p>
+<p class="p1"><span class="s1">.footer span::after{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>content:'';position:absolute;left:0;bottom:-2px;width:0;height:1px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:currentColor;transition:.3s;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.actions span:hover::after,</span></p>
+<p class="p1"><span class="s1">.footer span:hover::after{width:100%;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.footer{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;bottom:clamp(14px,3vh,20px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;transform:translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);opacity:.26;text-align:center;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.footer span{margin:0 clamp(4px,1vw,6px);cursor:pointer;position:relative;}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.cursor-dot{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;width:4px;height:4px;border-radius:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);pointer-events:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);z-index:9999;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;canvas id="pong"&gt;&lt;/canvas&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="sections" id="sections"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="address"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>Chemin Jean-Baptiste Vandelle 3A&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>Lakeside Geneva Building,&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>Geneva, 1290, Switzerland</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="clocks"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="clock"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="clock-top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;svg class="clock-svg" viewBox="0 0 20 20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="nyHour" class="clock-hand" x1="10" y1="10" x2="10" y2="6" stroke-width="1.3"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="nyMinute" class="clock-hand" x1="10" y1="10" x2="10" y2="4" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="nyTime" class="time-text"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="nyCity" class="location-label"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="clock"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="clock-top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;svg class="clock-svg" viewBox="0 0 20 20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="frHour" class="clock-hand" x1="10" y1="10" x2="10" y2="6" stroke-width="1.3"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="frMinute" class="clock-hand" x1="10" y1="10" x2="10" y2="4" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="frTime" class="time-text"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="frCity" class="location-label"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="clock"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="clock-top"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;svg class="clock-svg" viewBox="0 0 20 20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="sgHour" class="clock-hand" x1="10" y1="10" x2="10" y2="6" stroke-width="1.3"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;line id="sgMinute" class="clock-hand" x1="10" y1="10" x2="10" y2="4" stroke-width="1"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="sgTime" class="time-text"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="sgCity" class="location-label"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="homeBtn"&gt;Home&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="modeBtn"&gt;Dark Mode&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="privacyBtn"&gt;Privacy Policy&lt;/span&gt; |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="termsBtn"&gt;Terms of Service&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">"use strict";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* YEAR */</span></p>
+<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* TRANSLATIONS */</span></p>
+<p class="p1"><span class="s1">const translations={</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>en:{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections:['About','Inquiries','Philanthropy','Login'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>home:'Home',dark:'Dark Mode',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'Privacy Policy',terms:'Terms of Service',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cities:['New York','Geneva','Hong Kong']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cn:{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections:['关于','咨询','慈善事业','登录'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>home:'主页',dark:'深色模式',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'隐私政策',terms:'服务条款',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cities:['纽约','日内瓦','香港']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ru:{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections:['О нас','Запросы','Филантропия','Вход'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>home:'Главная',dark:'Тёмный режим',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'Конфиденциальность',terms:'Условия',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cities:['Нью-Йорк','Женева','Гонконг']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ar:{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections:['حول','استفسارات','العمل الخيري','تسجيل الدخول'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>home:'الرئيسية',dark:'الوضع الداكن',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'سياسة الخصوصية',terms:'الشروط',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cities:['نيويورك','جنيف','هونغ كونغ']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function setLang(lang){</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const elements=[</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections,homeBtn,modeBtn,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacyBtn,termsBtn,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nyCity,frCity,sgCity</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>elements.forEach(el=&gt;{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.remove("lang-fade-in");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.add("lang-fade-out");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.body.classList.toggle("rtl",lang==="ar");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.documentElement.lang=lang;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const t=translations[lang];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sections.innerHTML=</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>`&lt;span&gt;${t.sections[0]}&lt;/span&gt; |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>&lt;span&gt;${t.sections[1]}&lt;/span&gt; |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>&lt;span&gt;${t.sections[2]}&lt;/span&gt; |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>&lt;span&gt;${t.sections[3]}&lt;/span&gt;`;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>homeBtn.textContent=t.home;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>modeBtn.textContent=t.dark;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacyBtn.textContent=t.privacy;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>termsBtn.textContent=t.terms;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nyCity.textContent=t.cities[0];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>frCity.textContent=t.cities[1];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sgCity.textContent=t.cities[2];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>elements.forEach(el=&gt;{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.remove("lang-fade-out");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.add("lang-fade-in");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},200);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">langMenu.addEventListener("click",e=&gt;{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(e.target.dataset.lang) setLang(e.target.dataset.lang);</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p1"><span class="s1">setLang("en");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* DARK MODE */</span></p>
+<p class="p1"><span class="s1">modeBtn.addEventListener("click",()=&gt;document.body.classList.toggle("dark"));</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* CURSOR */</span></p>
+<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
+<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
+<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
+<p class="p1"><span class="s1">(function animateCursor(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cx+=(tx-cx)*0.15;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cy+=(ty-cy)*0.15;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.left=cx+"px";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.top=cy+"px";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animateCursor);</span></p>
+<p class="p1"><span class="s1">})();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* CLOCKS */</span></p>
+<p class="p1"><span class="s1">function updateClock(zone,hourId,minuteId,textId){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const now=new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const parts=new Intl.DateTimeFormat('en-US',{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>timeZone:zone,hour:'2-digit',minute:'2-digit',hour12:false</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}).formatToParts(now);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const hour=parseInt(parts.find(p=&gt;p.type==='hour').value);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const minute=parseInt(parts.find(p=&gt;p.type==='minute').value);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById(textId).textContent=</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>`${String(hour).padStart(2,'0')}:${String(minute).padStart(2,'0')}`;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById(hourId).style.transform=</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>`rotate(${((hour%12)+minute/60)*30}deg)`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById(minuteId).style.transform=</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>`rotate(${minute*6}deg)`;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">function updateAllClocks(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateClock('America/New_York','nyHour','nyMinute','nyTime');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateClock('Europe/Berlin','frHour','frMinute','frTime');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateClock('Asia/Hong_Kong','sgHour','sgMinute','sgTime');</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">setInterval(updateAllClocks,1000);</span></p>
+<p class="p1"><span class="s1">updateAllClocks();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* ORIGINAL NETWORK ANIMATION (unchanged) */</span></p>
+<p class="p1"><span class="s1">const canvas=document.getElementById("pong");</span></p>
+<p class="p1"><span class="s1">const ctx=canvas.getContext("2d");</span></p>
+<p class="p1"><span class="s1">let WIDTH,HEIGHT,DPR;</span></p>
+<p class="p1"><span class="s1">function resizeCanvas(){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const rect=canvas.getBoundingClientRect();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>DPR=devicePixelRatio||1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>WIDTH=rect.width;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>HEIGHT=rect.height;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>canvas.width=WIDTH*DPR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>canvas.height=HEIGHT*DPR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.setTransform(1,0,0,1,0,0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.scale(DPR,DPR);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">resizeCanvas();</span></p>
+<p class="p1"><span class="s1">addEventListener("resize",resizeCanvas);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const NODE_COUNT=8;</span></p>
+<p class="p1"><span class="s1">const MAX_DIST=150;</span></p>
+<p class="p1"><span class="s1">const MAX_DIST_SQ=MAX_DIST*MAX_DIST;</span></p>
+<p class="p1"><span class="s1">const LOOP_DURATION=30000;</span></p>
+<p class="p1"><span class="s1">const REPULSION_RADIUS=110;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">const nodes=[];</span></p>
+<p class="p1"><span class="s1">let mouse={x:0,y:0};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">canvas.addEventListener("mousemove",e=&gt;{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const rect=canvas.getBoundingClientRect();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>mouse.x=e.clientX-rect.left;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>mouse.y=e.clientY-rect.top;</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">for(let i=0;i&lt;NODE_COUNT;i++){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>nodes.push({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ampX:40+Math.random()*60,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ampY:35+Math.random()*55,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>freqX:1+Math.floor(Math.random()*3),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>freqY:1+Math.floor(Math.random()*3),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phaseX:Math.random()*Math.PI*2,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phaseY:Math.random()*Math.PI*2,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>x:WIDTH/2,y:HEIGHT/2,vx:0,vy:0</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function animate(timestamp){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const progress=(timestamp%LOOP_DURATION)/LOOP_DURATION;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const t=progress*Math.PI*2;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.clearRect(0,0,WIDTH,HEIGHT);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const color=getComputedStyle(document.body).getPropertyValue('--game').trim();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(const n of nodes){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const targetX=WIDTH/2 + Math.sin(t*n.freqX+n.phaseX)*n.ampX;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const targetY=HEIGHT/2 + Math.cos(t*n.freqY+n.phaseY)*n.ampY;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vx+=(targetX-n.x)*0.02;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vy+=(targetY-n.y)*0.02;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dx=n.x-mouse.x,dy=n.y-mouse.y;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dist=Math.sqrt(dx*dx+dy*dy);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if(dist&gt;0 &amp;&amp; dist&lt;REPULSION_RADIUS){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const force=(1-dist/REPULSION_RADIUS);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>n.vx+=(dx/dist)*force*2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>n.vy+=(dy/dist)*force*2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vx*=0.9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vy*=0.9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.x+=n.vx;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.y+=n.vy;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(let i=0;i&lt;nodes.length;i++){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>for(let j=i+1;j&lt;nodes.length;j++){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dx=nodes[i].x-nodes[j].x;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dy=nodes[i].y-nodes[j].y;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const distSq=dx*dx+dy*dy;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if(distSq&lt;MAX_DIST_SQ){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const alpha=0.3*(1-distSq/MAX_DIST_SQ);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.strokeStyle=color==="#000"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>? `rgba(0,0,0,${alpha})`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>: `rgba(242,242,242,${alpha})`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.lineWidth=1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.beginPath();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.moveTo(nodes[i].x,nodes[i].y);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.lineTo(nodes[j].x,nodes[j].y);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.stroke();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.fillStyle=color;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(const n of nodes){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.beginPath();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.arc(n.x,n.y,3.2,0,Math.PI*2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.fill();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animate);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">requestAnimationFrame(animate);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
