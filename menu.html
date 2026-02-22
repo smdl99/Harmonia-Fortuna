@@ -213,13 +213,15 @@ upgrade-insecure-requests;
         font-size: clamp(10px, 1vw, 11px);
         opacity: 0.6;
       }
-      .actions span {
+      .actions span,
+      .actions a {
         margin: 0 clamp(4px, 1vw, 8px);
         cursor: pointer;
         position: relative;
       }
       .actions span::after,
-      .footer span::after {
+      .footer span::after,
+      .actions a::after {
         content: '';
         position: absolute;
         left: 0;
@@ -230,7 +232,8 @@ upgrade-insecure-requests;
         transition: 0.3s;
       }
       .actions span:hover::after,
-      .footer span:hover::after {
+      .footer span:hover::after,
+      .actions a:hover::after {
         width: 100%;
       }
 
@@ -471,7 +474,7 @@ upgrade-insecure-requests;
           </div>
 
           <div class="actions">
-            <span id="homeBtn">Home</span>
+            <a href="/" id="homeBtn">Home</a>
             <span id="modeBtn">Dark Mode</span>
           </div>
         </div>
