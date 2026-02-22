@@ -272,8 +272,22 @@ upgrade-insecure-requests;
         }
       }
     </style>
+    <link rel="stylesheet" href="/loader.css" />
   </head>
   <body>
+    <div class="main-loader">
+      <svg viewBox="0 0 160 160">
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2a2a2a" />
+            <stop offset="50%" stop-color="#9a9a9a" />
+            <stop offset="100%" stop-color="#d6d6d6" />
+          </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" />
+      </svg>
+    </div>
+
     <div class="cursor-dot" id="cursor"></div>
 
     <div class="outer">
@@ -317,6 +331,8 @@ upgrade-insecure-requests;
         </div>
       </div>
     </div>
+
+    <script src="/loader.js"></script>
 
     <script>
       'use strict';
