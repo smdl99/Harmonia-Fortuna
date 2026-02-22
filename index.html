@@ -1,426 +1,545 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
-<p class="p1"><span class="s1">content="</span></p>
-<p class="p1"><span class="s1">default-src 'self';</span></p>
-<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
-<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
-<p class="p1"><span class="s1">object-src 'none';</span></p>
-<p class="p1"><span class="s1">base-uri 'self';</span></p>
-<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
-<p class="p1"><span class="s1">form-action 'self';</span></p>
-<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
-<p class="p1"><span class="s1">"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="referrer" content="no-referrer"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">/* YOUR ORIGINAL CSS — UNCHANGED */</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">:root{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--game:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--game:#f2f2f2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.outer{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:100vh;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:clamp(4px,1vw,8px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.inner{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(8px,2vw,16px));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow:hidden;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-left:clamp(10px,1.5vw,16px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang-fade-out{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .35s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .35s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang-fade-in{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .5s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .5s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.content{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:0 clamp(10px,4vw,40px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">canvas{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:min(260px,40vw);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width:280px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>aspect-ratio:3/2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 auto clamp(18px,3vh,26px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.title{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(20px,2.8vw,30px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.subtitle{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(8px,2vh,12px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.4vw,16px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.55;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.subtitle span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:1.15em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:400;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.actions{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(40px,6vh,55px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.actions span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 clamp(4px,1vw,8px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.actions span::after,</span></p>
-<p class="p1"><span class="s1">.footer span::after{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>content:'';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:-2px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height:1px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:currentColor;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.actions span:hover::after,</span></p>
-<p class="p1"><span class="s1">.footer span:hover::after{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:100%;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.footer{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(14px,3vh,20px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.26;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.footer span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 clamp(4px,1vw,6px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.cursor-dot{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height:4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>pointer-events:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index:9999;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;canvas id="pong"&gt;&lt;/canvas&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="title"&gt;Harmonia Fortuna&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="subtitle" id="subtitle"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span&gt;A&lt;/span&gt;lternative &lt;span&gt;A&lt;/span&gt;sset &lt;span&gt;M&lt;/span&gt;anagement</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="enterBtn"&gt;Enter&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="modeBtn"&gt;Dark Mode&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="privacyBtn"&gt;Privacy Policy&lt;/span&gt; |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="termsBtn"&gt;Terms of Service&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">"use strict";</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* LANGUAGE SYSTEM */</span></p>
-<p class="p1"><span class="s1">const translations={</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>en:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:'&lt;span&gt;A&lt;/span&gt;lternative &lt;span&gt;A&lt;/span&gt;sset &lt;span&gt;M&lt;/span&gt;anagement',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>enter:'Enter', dark:'Dark Mode',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'Privacy Policy', terms:'Terms of Service'</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cn:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:'&lt;span&gt;另&lt;/span&gt;类 &lt;span&gt;资&lt;/span&gt;产 &lt;span&gt;管&lt;/span&gt;理',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>enter:'进入', dark:'深色模式',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'隐私政策', terms:'服务条款'</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ru:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:'&lt;span&gt;А&lt;/span&gt;льтернативное &lt;span&gt;У&lt;/span&gt;правление &lt;span&gt;А&lt;/span&gt;ктивами',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>enter:'Войти', dark:'Тёмный режим',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'Конфиденциальность', terms:'Условия'</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ar:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:'&lt;span&gt;إ&lt;/span&gt;دارة &lt;span&gt;الأ&lt;/span&gt;صول &lt;span&gt;الب&lt;/span&gt;ديلة',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>enter:'الدخول', dark:'الوضع الداكن',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacy:'سياسة الخصوصية', terms:'الشروط'</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function setLang(lang){</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const subtitle=document.getElementById("subtitle");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const enterBtn=document.getElementById("enterBtn");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const modeBtn=document.getElementById("modeBtn");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const privacyBtn=document.getElementById("privacyBtn");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const termsBtn=document.getElementById("termsBtn");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const elements=[subtitle,enterBtn,modeBtn,privacyBtn,termsBtn];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.remove("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.add("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.body.classList.toggle("rtl",lang==="ar");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.documentElement.lang=lang;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle.innerHTML=translations[lang].subtitle;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>enterBtn.textContent=translations[lang].enter;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>modeBtn.textContent=translations[lang].dark;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacyBtn.textContent=translations[lang].privacy;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>termsBtn.textContent=translations[lang].terms;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.remove("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.add("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},200);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("langMenu").addEventListener("click",e=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(e.target.dataset.lang){setLang(e.target.dataset.lang);}</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">setLang("en");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("modeBtn")</span></p>
-<p class="p1"><span class="s1">.addEventListener("click",()=&gt;document.body.classList.toggle("dark"));</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("enterBtn")</span></p>
-<p class="p1"><span class="s1">.addEventListener("click",()=&gt;window.location.href="menu.html");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* CURSOR */</span></p>
-<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
-<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
-<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
-<p class="p1"><span class="s1">(function animateCursor(){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cx+=(tx-cx)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cy+=(ty-cy)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.left=cx+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.top=cy+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animateCursor);</span></p>
-<p class="p1"><span class="s1">})();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* YOUR ORIGINAL WORKING NETWORK ANIMATION */</span></p>
-<p class="p1"><span class="s1">const canvas=document.getElementById("pong");</span></p>
-<p class="p1"><span class="s1">const ctx=canvas.getContext("2d");</span></p>
-<p class="p1"><span class="s1">canvas.width=360;</span></p>
-<p class="p1"><span class="s1">canvas.height=240;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const WIDTH=canvas.width;</span></p>
-<p class="p1"><span class="s1">const HEIGHT=canvas.height;</span></p>
-<p class="p1"><span class="s1">const NODE_COUNT=8;</span></p>
-<p class="p1"><span class="s1">const MAX_DIST=170;</span></p>
-<p class="p1"><span class="s1">const MAX_DIST_SQ=MAX_DIST*MAX_DIST;</span></p>
-<p class="p1"><span class="s1">const LOOP_DURATION=30000;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const nodes=[];</span></p>
-<p class="p1"><span class="s1">let mouse={x:WIDTH/2,y:HEIGHT/2};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">canvas.addEventListener("mousemove",e=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const rect=canvas.getBoundingClientRect();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>mouse.x=(e.clientX-rect.left)*(WIDTH/rect.width);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>mouse.y=(e.clientY-rect.top)*(HEIGHT/rect.height);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">for(let i=0;i&lt;NODE_COUNT;i++){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>nodes.push({</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ampX:60+Math.random()*80,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ampY:45+Math.random()*70,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>freqX:1+Math.floor(Math.random()*3),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>freqY:1+Math.floor(Math.random()*3),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phaseX:Math.random()*Math.PI*2,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phaseY:Math.random()*Math.PI*2,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>x:WIDTH/2,y:HEIGHT/2,vx:0,vy:0</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function animate(timestamp){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const progress=(timestamp%LOOP_DURATION)/LOOP_DURATION;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const t=progress*Math.PI*2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.clearRect(0,0,WIDTH,HEIGHT);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const gameColor=getComputedStyle(document.body)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>.getPropertyValue('--game').trim();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(const n of nodes){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const targetX=WIDTH/2 + Math.sin(t*n.freqX+n.phaseX)*n.ampX;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const targetY=HEIGHT/2 + Math.cos(t*n.freqY+n.phaseY)*n.ampY;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vx+=(targetX-n.x)*0.02;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vy+=(targetY-n.y)*0.02;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dx=n.x-mouse.x;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dy=n.y-mouse.y;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dist=Math.sqrt(dx*dx+dy*dy);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const radius=120;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if(dist&gt;0 &amp;&amp; dist&lt;radius){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const force=(1-dist/radius);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const strength=2.0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>n.vx+=(dx/dist)*force*strength;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>n.vy+=(dy/dist)*force*strength;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vx*=0.9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.vy*=0.9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.x+=n.vx;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>n.y+=n.vy;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(let i=0;i&lt;nodes.length;i++){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>for(let j=i+1;j&lt;nodes.length;j++){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dx=nodes[i].x-nodes[j].x;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dy=nodes[i].y-nodes[j].y;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const distSq=dx*dx+dy*dy;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if(distSq&lt;MAX_DIST_SQ){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const alpha=0.28*(1-distSq/MAX_DIST_SQ);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.strokeStyle=gameColor==="#000"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>? `rgba(0,0,0,${alpha})`</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>: `rgba(242,242,242,${alpha})`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.lineWidth=1.2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.beginPath();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.moveTo(nodes[i].x,nodes[i].y);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.lineTo(nodes[j].x,nodes[j].y);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.stroke();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ctx.fillStyle=gameColor;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(const n of nodes){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.beginPath();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.arc(n.x,n.y,4.2,0,Math.PI*2);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ctx.fill();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animate);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">requestAnimationFrame(animate);</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+default-src 'self';
+script-src 'self' 'unsafe-inline';
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src https://fonts.gstatic.com;
+img-src 'self' data:;
+object-src 'none';
+base-uri 'self';
+frame-ancestors 'none';
+form-action 'self';
+upgrade-insecure-requests;
+"
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="no-referrer" />
+
+    <title>Harmonia Fortuna</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="public/HF Logo 32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="public/HF Logo.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="icon" href="public/HF Logo.svg" type="image/svg+xml" />
+
+    <style>
+      :root {
+        --page-bg: #f6f6f6;
+        --container-bg: #f9f9f9;
+        --text: #000;
+        --game: #000;
+        --cursor: #777;
+      }
+      body.dark {
+        --page-bg: #0f0f0f;
+        --container-bg: #121212;
+        --text: #fff;
+        --game: #f2f2f2;
+        --cursor: #aaa;
+      }
+      body {
+        margin: 0;
+        background: var(--page-bg);
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+        transition: 0.4s;
+        user-select: none;
+      }
+      body.rtl {
+        direction: rtl;
+      }
+
+      .outer {
+        min-height: 100vh;
+        padding: clamp(4px, 1vw, 8px);
+      }
+      .inner {
+        min-height: calc(100vh - clamp(8px, 2vw, 16px));
+        background: linear-gradient(
+          to bottom,
+          var(--container-bg),
+          rgba(0, 0, 0, 0.01)
+        );
+        border-radius: 18px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .lang {
+        position: absolute;
+        top: clamp(18px, 3vh, 28px);
+        right: clamp(18px, 3vw, 40px);
+        font-size: clamp(9px, 1vw, 13px);
+        opacity: 0.35;
+      }
+      body.rtl .lang {
+        right: auto;
+        left: clamp(18px, 3vw, 40px);
+      }
+      .lang span {
+        margin-left: clamp(10px, 1.5vw, 16px);
+        cursor: pointer;
+      }
+
+      .lang-fade-out {
+        opacity: 0;
+        transform: translateY(4px);
+        transition:
+          opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .lang-fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        transition:
+          opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .content {
+        text-align: center;
+        padding: 0 clamp(10px, 4vw, 40px);
+      }
+
+      canvas {
+        width: min(260px, 40vw);
+        max-width: 280px;
+        aspect-ratio: 3/2;
+        display: block;
+        margin: 0 auto clamp(18px, 3vh, 26px);
+      }
+
+      .title {
+        font-size: clamp(20px, 2.8vw, 30px);
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        margin-top: clamp(8px, 2vh, 12px);
+        font-size: clamp(12px, 1.4vw, 16px);
+        opacity: 0.55;
+      }
+      .subtitle span {
+        font-size: 1.15em;
+        font-weight: 400;
+      }
+
+      .actions {
+        position: absolute;
+        bottom: clamp(40px, 6vh, 55px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+      }
+      .actions span {
+        margin: 0 clamp(4px, 1vw, 8px);
+        cursor: pointer;
+        position: relative;
+      }
+      .actions span::after,
+      .footer span.clickable::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background: currentColor;
+        transition: 0.3s;
+      }
+      .actions span:hover::after,
+      .footer span.clickable:hover::after {
+        width: 100%;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: clamp(14px, 3vh, 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(8px, 0.8vw, 11px);
+        opacity: 0.26;
+        text-align: center;
+      }
+
+      .footer span.clickable {
+        margin: 0 clamp(4px, 1vw, 6px);
+        cursor: pointer;
+        position: relative;
+      }
+
+      .cursor-dot {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--cursor);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+
+      /* ===== MOBILE OPTIMIZATION (NO CODE REMOVED) ===== */
+      @media (max-width: 600px) {
+        .inner {
+          padding: 12px;
+        }
+
+        canvas {
+          width: 220px;
+          max-width: 220px;
+          margin-bottom: 18px;
+        }
+
+        .content {
+          padding: 0 12px;
+        }
+
+        .footer {
+          font-size: 10px;
+          white-space: nowrap;
+          bottom: 12px;
+        }
+
+        .actions {
+          bottom: 65px;
+        }
+      }
+
+      /* ===== AGGRESSIVE MOBILE FULL OPTIMIZATION (NO CODE REMOVED) ===== */
+      @media (max-width: 600px) {
+        .outer {
+          padding: 2px !important;
+          min-height: 100dvh !important;
+        }
+
+        .inner {
+          min-height: calc(100dvh - 4px) !important;
+          padding-top: 6px !important;
+          padding-bottom: 6px !important;
+          align-items: center !important;
+        }
+
+        .content {
+          padding: 0 8px !important;
+        }
+
+        /* Make animation ~30% bigger but contained */
+        canvas {
+          width: 260px !important;
+          max-width: 260px !important;
+          margin-bottom: 12px !important;
+        }
+
+        .actions {
+          bottom: 40px !important;
+        }
+
+        .footer {
+          bottom: 6px !important;
+          white-space: nowrap !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <div class="outer">
+      <div class="inner">
+        <div class="lang" id="langMenu">
+          <span data-lang="en">EN</span>
+          <span data-lang="cn">中文</span>
+          <span data-lang="ru">RU</span>
+          <span data-lang="ar">AR</span>
+        </div>
+
+        <div class="content">
+          <canvas id="pong"></canvas>
+
+          <div class="title">Harmonia Fortuna</div>
+          <div class="subtitle" id="subtitle">
+            <span>A</span>lternative <span>A</span>sset <span>M</span>anagement
+          </div>
+
+          <div class="actions">
+            <span id="enterBtn">Enter</span>
+            <span id="modeBtn">Dark Mode</span>
+          </div>
+        </div>
+
+        <div class="footer">
+          ©<span id="year"></span> Harmonia Fortuna |
+          <span id="privacyBtn" class="clickable">Privacy Policy</span> |
+          <span id="termsBtn" class="clickable">Terms of Service</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      'use strict';
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      document
+        .getElementById('privacyBtn')
+        .addEventListener(
+          'click',
+          () => (window.location.href = 'privacy.html'),
+        );
+
+      document
+        .getElementById('termsBtn')
+        .addEventListener('click', () => (window.location.href = 'terms.html'));
+
+      const translations = {
+        en: {
+          subtitle:
+            '<span>A</span>lternative <span>A</span>sset <span>M</span>anagement',
+          enter: 'Enter',
+          dark: 'Dark Mode',
+          light: 'Light Mode',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+        },
+        cn: {
+          subtitle: '<span>另</span>类 <span>资</span>产 <span>管</span>理',
+          enter: '进入',
+          dark: '深色模式',
+          light: '浅色模式',
+          privacy: '隐私政策',
+          terms: '服务条款',
+        },
+        ru: {
+          subtitle:
+            '<span>А</span>льтернативное <span>У</span>правление <span>А</span>ктивами',
+          enter: 'Войти',
+          dark: 'Тёмный режим',
+          light: 'Светлый режим',
+          privacy: 'Конфиденциальность',
+          terms: 'Условия',
+        },
+        ar: {
+          subtitle:
+            '<span>إ</span>دارة <span>الأ</span>صول <span>الب</span>ديلة',
+          enter: 'الدخول',
+          dark: 'الوضع الداكن',
+          light: 'الوضع الفاتح',
+          privacy: 'سياسة الخصوصية',
+          terms: 'الشروط',
+        },
+      };
+
+      let currentLang = 'en';
+
+      function updateModeButton() {
+        const modeBtn = document.getElementById('modeBtn');
+        const t = translations[currentLang];
+        modeBtn.textContent = document.body.classList.contains('dark')
+          ? t.light
+          : t.dark;
+      }
+
+      function setLang(lang) {
+        currentLang = lang;
+
+        const subtitle = document.getElementById('subtitle');
+        const enterBtn = document.getElementById('enterBtn');
+        const privacyBtn = document.getElementById('privacyBtn');
+        const termsBtn = document.getElementById('termsBtn');
+
+        const elements = [subtitle, enterBtn, privacyBtn, termsBtn];
+
+        elements.forEach((el) => {
+          el.classList.remove('lang-fade-in');
+          el.classList.add('lang-fade-out');
+        });
+
+        setTimeout(() => {
+          document.body.classList.toggle('rtl', lang === 'ar');
+          document.documentElement.lang = lang;
+
+          const t = translations[lang];
+
+          subtitle.innerHTML = t.subtitle;
+          enterBtn.textContent = t.enter;
+          privacyBtn.textContent = t.privacy;
+          termsBtn.textContent = t.terms;
+
+          updateModeButton();
+
+          elements.forEach((el) => {
+            el.classList.remove('lang-fade-out');
+            el.classList.add('lang-fade-in');
+          });
+        }, 200);
+      }
+
+      document.getElementById('langMenu').addEventListener('click', (e) => {
+        if (e.target.dataset.lang) {
+          setLang(e.target.dataset.lang);
+        }
+      });
+
+      document.getElementById('modeBtn').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        updateModeButton();
+      });
+
+      document
+        .getElementById('enterBtn')
+        .addEventListener('click', () => (window.location.href = 'menu.html'));
+
+      setLang('en');
+
+      /* Cursor */
+      const cursor = document.getElementById('cursor');
+      let cx = innerWidth / 2,
+        cy = innerHeight / 2,
+        tx = cx,
+        ty = cy;
+      addEventListener('mousemove', (e) => {
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      (function animateCursor() {
+        cx += (tx - cx) * 0.15;
+        cy += (ty - cy) * 0.15;
+        cursor.style.left = cx + 'px';
+        cursor.style.top = cy + 'px';
+        requestAnimationFrame(animateCursor);
+      })();
+
+      /* Network animation unchanged */
+      const canvas = document.getElementById('pong');
+      const ctx = canvas.getContext('2d');
+      canvas.width = 360;
+      canvas.height = 240;
+
+      const WIDTH = canvas.width;
+      const HEIGHT = canvas.height;
+      const NODE_COUNT = 8;
+      const MAX_DIST = 170;
+      const MAX_DIST_SQ = MAX_DIST * MAX_DIST;
+      const LOOP_DURATION = 30000;
+
+      const nodes = [];
+      let mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
+
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = (e.clientX - rect.left) * (WIDTH / rect.width);
+        mouse.y = (e.clientY - rect.top) * (HEIGHT / rect.height);
+      });
+
+      for (let i = 0; i < NODE_COUNT; i++) {
+        nodes.push({
+          ampX: 60 + Math.random() * 80,
+          ampY: 45 + Math.random() * 70,
+          freqX: 1 + Math.floor(Math.random() * 3),
+          freqY: 1 + Math.floor(Math.random() * 3),
+          phaseX: Math.random() * Math.PI * 2,
+          phaseY: Math.random() * Math.PI * 2,
+          x: WIDTH / 2,
+          y: HEIGHT / 2,
+          vx: 0,
+          vy: 0,
+        });
+      }
+
+      function animate(timestamp) {
+        const progress = (timestamp % LOOP_DURATION) / LOOP_DURATION;
+        const t = progress * Math.PI * 2;
+        ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+        const gameColor = getComputedStyle(document.body)
+          .getPropertyValue('--game')
+          .trim();
+
+        for (const n of nodes) {
+          const targetX = WIDTH / 2 + Math.sin(t * n.freqX + n.phaseX) * n.ampX;
+          const targetY =
+            HEIGHT / 2 + Math.cos(t * n.freqY + n.phaseY) * n.ampY;
+
+          n.vx += (targetX - n.x) * 0.02;
+          n.vy += (targetY - n.y) * 0.02;
+
+          const dx = n.x - mouse.x;
+          const dy = n.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const radius = 120;
+
+          if (dist > 0 && dist < radius) {
+            const force = 1 - dist / radius;
+            const strength = 2.0;
+            n.vx += (dx / dist) * force * strength;
+            n.vy += (dy / dist) * force * strength;
+          }
+
+          n.vx *= 0.9;
+          n.vy *= 0.9;
+          n.x += n.vx;
+          n.y += n.vy;
+        }
+
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const distSq = dx * dx + dy * dy;
+
+            if (distSq < MAX_DIST_SQ) {
+              const alpha = 0.28 * (1 - distSq / MAX_DIST_SQ);
+              ctx.strokeStyle =
+                gameColor === '#000'
+                  ? `rgba(0,0,0,${alpha})`
+                  : `rgba(242,242,242,${alpha})`;
+              ctx.lineWidth = 1.2;
+              ctx.beginPath();
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        ctx.fillStyle = gameColor;
+        for (const n of nodes) {
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, 4.2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+    </script>
+  </body>
 </html>

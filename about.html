@@ -1,375 +1,503 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
-<p class="p1"><span class="s1">content="</span></p>
-<p class="p1"><span class="s1">default-src 'self';</span></p>
-<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
-<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
-<p class="p1"><span class="s1">object-src 'none';</span></p>
-<p class="p1"><span class="s1">base-uri 'self';</span></p>
-<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
-<p class="p1"><span class="s1">form-action 'self';</span></p>
-<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
-<p class="p1"><span class="s1">"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="referrer" content="no-referrer"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna — About&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">:root{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.outer{min-height:100vh;padding:clamp(4px,1vw,8px);}</span></p>
-<p class="p1"><span class="s1">.inner{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(8px,2vw,16px));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:flex-start;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow:hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-top:clamp(120px,16vh,160px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .lang{right:auto;left:clamp(18px,3vw,40px);}</span></p>
-<p class="p1"><span class="s1">.lang span{margin-left:clamp(10px,1.5vw,16px);cursor:pointer;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.content{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:60%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width:800px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:left;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-bottom:140px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.back-top{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom:clamp(16px,3vh,22px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.title{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(20px,2.5vw,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.text{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(16px,3vh,22px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.3vw,15px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line-height:1.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>white-space:pre-line;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang-fade-out{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .35s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .35s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang-fade-in{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .5s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .5s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.actions{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(40px,6vh,55px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.footer{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(14px,3vh,20px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.26;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.cursor-dot{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height:4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>pointer-events:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index:9999;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="back-top" id="backBtnTop"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="title" id="title"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="text" id="text"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="modeBtn"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="privacyBtn"&gt;&lt;/span&gt; |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="termsBtn"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">"use strict";</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const translations = {</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">en:{</span></p>
-<p class="p1"><span class="s1">title:"About Harmonia Fortuna",</span></p>
-<p class="p1"><span class="s1">text:`About Harmonia Fortuna</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Harmonia Fortuna is an innovative alternative asset management firm dedicated to harnessing unique investment opportunities across diverse sectors. With our headquarters in [Location], we are committed to excellence and transparency in all our activities.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Our Investment Philosophy</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">At Harmonia Fortuna, we excel in identifying investments that not only offer high returns but also contribute positively to society and the environment. Our focus is on building a portfolio of resilient assets that generate sustainable cash flows, employing rigorous analysis and strategic foresight. We pride ourselves on our ability to navigate complex investment landscapes, leveraging our comprehensive expertise in due diligence, risk management, and asset valuation.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Expertise and Capabilities</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Our team consists of seasoned professionals with diverse backgrounds in finance, real estate, renewable energy, and technology. Together, we bring a wealth of experience in structuring and managing multifaceted projects that align with long-term growth and stability. We engage in strategic partnerships and collaborations with industry leaders, government entities, and non-profits to ensure our investments create enduring value.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Global Reach, Local Insight</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">While our focus is global, with an eye on emerging markets and developed regions alike, we strategically target areas characterized by strong economic fundamentals and geopolitical stability. Our investment strategy prioritizes jurisdictions that foster growth and innovation, enabling us to create tailored capital solutions that cater to our clients’ diverse needs.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Commitment to Sustainable Growth</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Harmonia Fortuna is dedicated to the principles of responsible investing, ensuring that our investment decisions align with environmental sustainability and social responsibility. We believe that true financial success should also contribute to the betterment of society, and we strive to integrate ESG (Environmental, Social, and Governance) considerations into our investment framework.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Join us at Harmonia Fortuna as we pave the way for a brighter, more prosperous future through strategic investments that harmonize financial growth with social responsibility.`,</span></p>
-<p class="p1"><span class="s1">back:"← Back",</span></p>
-<p class="p1"><span class="s1">dark:"Dark Mode",</span></p>
-<p class="p1"><span class="s1">privacy:"Privacy Policy",</span></p>
-<p class="p1"><span class="s1">terms:"Terms of Service"</span></p>
-<p class="p1"><span class="s1">},</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">cn:{</span></p>
-<p class="p1"><span class="s1">title:"关于 Harmonia Fortuna",</span></p>
-<p class="p1"><span class="s1">text:`关于 Harmonia Fortuna</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Harmonia Fortuna 是一家创新型另类资产管理公司，致力于在多元化领域中发掘独特的投资机会。我们的总部位于 [Location]，在所有业务活动中始终坚持卓越与透明。</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">我们的投资理念</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">在 Harmonia Fortuna，我们擅长识别不仅带来高回报，同时对社会和环境产生积极影响的投资机会。我们专注于构建具有韧性、能够产生可持续现金流的资产组合，并通过严谨分析与战略前瞻实现长期价值。我们以驾驭复杂投资环境的能力为荣，并依托在尽职调查、风险管理和资产估值方面的综合专业能力开展工作。</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">专业能力</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">我们的团队由在金融、房地产、可再生能源和科技领域拥有丰富经验的资深专业人士组成。我们在项目结构设计与管理方面积累了深厚经验，确保多元化项目与长期增长和稳定性保持一致。我们与行业领袖、政府机构及非营利组织建立战略合作关系，确保投资创造持久价值。</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">全球视野，本地洞察</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">我们立足全球，关注新兴市场与成熟市场，同时重点选择具备稳健经济基础与地缘政治稳定性的地区。我们的投资战略优先考虑鼓励增长与创新的司法辖区，为客户多样化需求提供定制化资本解决方案。</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">致力于可持续增长</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Harmonia Fortuna 坚持负责任投资原则，确保投资决策符合环境可持续性与社会责任标准。我们相信真正的财务成功应当促进社会福祉，并致力于将 ESG（环境、社会与公司治理）因素纳入投资框架。</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">欢迎加入 Harmonia Fortuna，与我们一起通过战略投资，协调金融增长与社会责任，共同开创更加光明与繁荣的未来。`,</span></p>
-<p class="p1"><span class="s1">back:"← 返回",</span></p>
-<p class="p1"><span class="s1">dark:"深色模式",</span></p>
-<p class="p1"><span class="s1">privacy:"隐私政策",</span></p>
-<p class="p1"><span class="s1">terms:"服务条款"</span></p>
-<p class="p1"><span class="s1">},</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">ru:{</span></p>
-<p class="p1"><span class="s1">title:"О Harmonia Fortuna",</span></p>
-<p class="p1"><span class="s1">text:`О Harmonia Fortuna</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Harmonia Fortuna — инновационная компания по управлению альтернативными активами, ориентированная на поиск уникальных инвестиционных возможностей в различных секторах. Наша штаб-квартира расположена в [Location], и мы придерживаемся принципов прозрачности и высокого качества во всех направлениях деятельности.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Наша инвестиционная философия</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Мы выявляем инвестиции, способные не только приносить высокую доходность, но и оказывать положительное влияние на общество и окружающую среду. Мы формируем устойчивый портфель активов с долгосрочным денежным потоком, применяя строгий анализ и стратегическое планирование.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Экспертиза и возможности</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Наша команда состоит из опытных специалистов в области финансов, недвижимости, возобновляемой энергетики и технологий. Мы выстраиваем стратегические партнёрства с лидерами отрасли и государственными структурами для создания долгосрочной ценности.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Глобальный охват, локальная экспертиза</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Мы работаем глобально, уделяя внимание как развивающимся, так и развитым рынкам, выбирая юрисдикции с устойчивой экономикой и политической стабильностью.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Приверженность устойчивому развитию</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Мы интегрируем ESG-принципы в инвестиционную стратегию и считаем, что финансовый успех должен способствовать развитию общества.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">Присоединяйтесь к Harmonia Fortuna и создавайте устойчивое будущее вместе с нами.`,</span></p>
-<p class="p1"><span class="s1">back:"← Назад",</span></p>
-<p class="p1"><span class="s1">dark:"Тёмный режим",</span></p>
-<p class="p1"><span class="s1">privacy:"Конфиденциальность",</span></p>
-<p class="p1"><span class="s1">terms:"Условия обслуживания"</span></p>
-<p class="p1"><span class="s1">},</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">ar:{</span></p>
-<p class="p1"><span class="s1">title:"حول Harmonia Fortuna",</span></p>
-<p class="p1"><span class="s1">text:`حول Harmonia Fortuna</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">تُعد Harmonia Fortuna شركة مبتكرة لإدارة الأصول البديلة، تركز على استكشاف فرص استثمارية فريدة عبر قطاعات متنوعة. يقع مقرنا الرئيسي في [Location] ونلتزم بأعلى معايير الشفافية والتميز في جميع أنشطتنا.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">فلسفتنا الاستثمارية</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">نتميز بتحديد الاستثمارات التي تحقق عوائد مرتفعة وتسهم إيجابياً في المجتمع والبيئة. نعمل على بناء محفظة أصول مرنة تولد تدفقات نقدية مستدامة من خلال تحليل دقيق ورؤية استراتيجية بعيدة المدى.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">الخبرات والقدرات</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">يضم فريقنا محترفين ذوي خبرة في التمويل والعقارات والطاقة المتجددة والتكنولوجيا، ونعمل من خلال شراكات استراتيجية لضمان خلق قيمة طويلة الأمد.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">انتشار عالمي ورؤية محلية</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">نركز على الأسواق الناشئة والمتقدمة ضمن بيئات اقتصادية مستقرة وجاذبة للنمو والابتكار.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">الالتزام بالنمو المستدام</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">نؤمن بأن النجاح المالي الحقيقي يجب أن ينعكس إيجاباً على المجتمع، ولذلك ندمج معايير ESG ضمن إطارنا الاستثماري.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">انضموا إلى Harmonia Fortuna لصناعة مستقبل أكثر ازدهاراً واستدامة.`,</span></p>
-<p class="p1"><span class="s1">back:"← رجوع",</span></p>
-<p class="p1"><span class="s1">dark:"الوضع الداكن",</span></p>
-<p class="p1"><span class="s1">privacy:"سياسة الخصوصية",</span></p>
-<p class="p1"><span class="s1">terms:"الشروط"</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function setLang(lang){</span></p>
-<p class="p1"><span class="s1">const elements=[title,text,backBtnTop,modeBtn,privacyBtn,termsBtn];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1">el.classList.remove("lang-fade-in");</span></p>
-<p class="p1"><span class="s1">el.classList.add("lang-fade-out");</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">setTimeout(()=&gt;{</span></p>
-<p class="p1"><span class="s1">document.body.classList.toggle("rtl",lang==="ar");</span></p>
-<p class="p1"><span class="s1">document.documentElement.lang=lang;</span></p>
-<p class="p1"><span class="s1">const t=translations[lang];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">title.textContent=t.title;</span></p>
-<p class="p1"><span class="s1">text.textContent=t.text;</span></p>
-<p class="p1"><span class="s1">backBtnTop.textContent=t.back;</span></p>
-<p class="p1"><span class="s1">modeBtn.textContent=t.dark;</span></p>
-<p class="p1"><span class="s1">privacyBtn.textContent=t.privacy;</span></p>
-<p class="p1"><span class="s1">termsBtn.textContent=t.terms;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1">el.classList.remove("lang-fade-out");</span></p>
-<p class="p1"><span class="s1">el.classList.add("lang-fade-in");</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">},200);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("langMenu").addEventListener("click",e=&gt;{</span></p>
-<p class="p1"><span class="s1">if(e.target.dataset.lang) setLang(e.target.dataset.lang);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("modeBtn").addEventListener("click",()=&gt;document.body.classList.toggle("dark"));</span></p>
-<p class="p1"><span class="s1">document.getElementById("backBtnTop").addEventListener("click",()=&gt;window.location.href="menu.html");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">setLang("en");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Smooth cursor */</span></p>
-<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
-<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
-<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
-<p class="p1"><span class="s1">(function animateCursor(){</span></p>
-<p class="p1"><span class="s1">cx+=(tx-cx)*0.15;</span></p>
-<p class="p1"><span class="s1">cy+=(ty-cy)*0.15;</span></p>
-<p class="p1"><span class="s1">cursor.style.left=cx+"px";</span></p>
-<p class="p1"><span class="s1">cursor.style.top=cy+"px";</span></p>
-<p class="p1"><span class="s1">requestAnimationFrame(animateCursor);</span></p>
-<p class="p1"><span class="s1">})();</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+default-src 'self';
+script-src 'self' 'unsafe-inline';
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src https://fonts.gstatic.com;
+img-src 'self' data:;
+object-src 'none';
+base-uri 'self';
+frame-ancestors 'none';
+form-action 'self';
+upgrade-insecure-requests;
+"
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="no-referrer" />
+
+    <title>Harmonia Fortuna — About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="public/HF Logo 32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="public/HF Logo.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="icon" href="public/HF Logo.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --page-bg: #f6f6f6;
+        --container-bg: #f9f9f9;
+        --text: #000;
+        --cursor: #777;
+      }
+      body.dark {
+        --page-bg: #0f0f0f;
+        --container-bg: #121212;
+        --text: #fff;
+        --cursor: #aaa;
+      }
+      body {
+        margin: 0;
+        background: var(--page-bg);
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+        transition: 0.4s;
+        cursor: none;
+        user-select: none;
+      }
+      body.rtl {
+        direction: rtl;
+      }
+
+      .outer {
+        min-height: 100vh;
+        padding: clamp(4px, 1vw, 8px);
+      }
+      .inner {
+        min-height: calc(100vh - clamp(8px, 2vw, 16px));
+        background: linear-gradient(
+          to bottom,
+          var(--container-bg),
+          rgba(0, 0, 0, 0.01)
+        );
+        border-radius: 18px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: clamp(120px, 16vh, 160px);
+      }
+
+      .lang {
+        position: absolute;
+        top: clamp(18px, 3vh, 28px);
+        right: clamp(18px, 3vw, 40px);
+        font-size: clamp(9px, 1vw, 13px);
+        opacity: 0.35;
+      }
+      body.rtl .lang {
+        right: auto;
+        left: clamp(18px, 3vw, 40px);
+      }
+      .lang span {
+        margin-left: clamp(10px, 1.5vw, 16px);
+        cursor: pointer;
+      }
+
+      .content {
+        width: 60%;
+        max-width: 800px;
+        text-align: left;
+        padding-bottom: 140px;
+      }
+
+      .back-top {
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: clamp(16px, 3vh, 22px);
+      }
+
+      .title {
+        font-size: clamp(20px, 2.5vw, 28px);
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+
+      .text {
+        margin-top: clamp(16px, 3vh, 22px);
+        font-size: clamp(12px, 1.3vw, 15px);
+        line-height: 1.6;
+        opacity: 0.6;
+        white-space: pre-line;
+      }
+
+      .lang-fade-out {
+        opacity: 0;
+        transform: translateY(3px);
+        transition:
+          opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .lang-fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        transition:
+          opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .actions {
+        position: absolute;
+        bottom: clamp(40px, 6vh, 55px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: clamp(14px, 3vh, 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(8px, 0.8vw, 11px);
+        opacity: 0.26;
+        text-align: center;
+      }
+
+      .cursor-dot {
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--cursor);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+
+      /* ===== MOBILE FULL OPTIMIZATION MATCH (NO CODE REMOVED) ===== */
+      @media (max-width: 600px) {
+        .outer {
+          padding: 2px !important;
+          min-height: 100dvh !important;
+        }
+
+        .inner {
+          min-height: calc(100dvh - 4px) !important;
+          padding-top: 40px !important; /* reduce huge top spacing */
+          padding-bottom: 6px !important;
+        }
+
+        .content {
+          width: 92% !important;
+          padding-bottom: 60px !important;
+        }
+
+        .back-top {
+          margin-bottom: 12px !important;
+        }
+
+        .text {
+          font-size: 14px !important;
+        }
+
+        .actions {
+          bottom: 38px !important;
+        }
+
+        .footer {
+          bottom: 6px !important;
+          white-space: nowrap !important;
+        }
+      }
+
+      /* ===== REFINED MOBILE LAYOUT (NO CODE REMOVED) ===== */
+      @media (max-width: 600px) {
+        .outer {
+          padding: 6px !important;
+          min-height: 100dvh !important;
+        }
+
+        .inner {
+          min-height: calc(100dvh - 12px) !important;
+          padding-top: 95px !important; /* more breathing space top */
+          padding-bottom: 20px !important;
+        }
+
+        .content {
+          width: 80% !important; /* use 80% of page */
+          padding-bottom: 80px !important;
+        }
+
+        .back-top {
+          font-size: 14px !important; /* bigger back button */
+          margin-bottom: 20px !important;
+        }
+
+        .text {
+          font-size: 15px !important;
+          line-height: 1.7 !important;
+        }
+
+        .actions {
+          bottom: 45px !important;
+        }
+
+        .footer {
+          bottom: 10px !important;
+          white-space: nowrap !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <div class="outer">
+      <div class="inner">
+        <div class="lang" id="langMenu">
+          <span data-lang="en">EN</span>
+          <span data-lang="cn">中文</span>
+          <span data-lang="ru">RU</span>
+          <span data-lang="ar">AR</span>
+        </div>
+
+        <div class="content">
+          <div class="back-top" id="backBtnTop"></div>
+          <div class="title" id="title"></div>
+          <div class="text" id="text"></div>
+        </div>
+
+        <div class="actions">
+          <span id="modeBtn"></span>
+        </div>
+
+        <div class="footer">
+          ©<span id="year"></span> Harmonia Fortuna |
+          <span id="privacyBtn"></span> |
+          <span id="termsBtn"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      'use strict';
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      document
+        .getElementById('privacyBtn')
+        .addEventListener(
+          'click',
+          () => (window.location.href = 'privacy.html'),
+        );
+
+      document
+        .getElementById('termsBtn')
+        .addEventListener('click', () => (window.location.href = 'terms.html'));
+
+      const translations = {
+        en: {
+          title: 'About',
+          text: `Harmonia Fortuna is an innovative alternative asset management firm dedicated to harnessing unique investment opportunities across diverse sectors. With our headquarters in Switzerland, we are committed to excellence and transparency in all our activities.
+
+Our Investment Philosophy
+
+At Harmonia Fortuna, we excel in identifying investments that not only offer high returns but also contribute positively to society and the environment. Our focus is on building a portfolio of resilient assets that generate sustainable cash flows, employing rigorous analysis and strategic foresight. We pride ourselves on our ability to navigate complex investment landscapes, leveraging our comprehensive expertise in due diligence, risk management, and asset valuation.
+
+Expertise and Capabilities
+
+Our team consists of seasoned professionals with diverse backgrounds in finance, real estate, renewable energy, and technology. Together, we bring a wealth of experience in structuring and managing multifaceted projects that align with long-term growth and stability. We engage in strategic partnerships and collaborations with industry leaders, government entities, and non-profits to ensure our investments create enduring value.
+
+Global Reach, Local Insight
+
+While our focus is global, with an eye on emerging markets and developed regions alike, we strategically target areas characterized by strong economic fundamentals and geopolitical stability. Our investment strategy prioritizes jurisdictions that foster growth and innovation, enabling us to create tailored capital solutions that cater to our clients’ diverse needs.
+
+Commitment to Sustainable Growth
+
+Harmonia Fortuna is dedicated to the principles of responsible investing, ensuring that our investment decisions align with environmental sustainability and social responsibility. We believe that true financial success should also contribute to the betterment of society, and we strive to integrate ESG (Environmental, Social, and Governance) considerations into our investment framework.
+
+Join us at Harmonia Fortuna as we pave the way for a brighter, more prosperous future through strategic investments that harmonize financial growth with social responsibility.`,
+          back: '← Back',
+          dark: 'Dark Mode',
+          light: 'Light Mode',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+        },
+
+        cn: {
+          title: '关于 Harmonia Fortuna',
+          text: `关于 Harmonia Fortuna
+
+Harmonia Fortuna 是一家创新型另类资产管理公司，致力于在多元化领域中发掘独特的投资机会。我们的总部位于 Switzerland，在所有业务活动中始终坚持卓越与透明。
+
+我们的投资理念
+
+在 Harmonia Fortuna，我们擅长识别不仅带来高回报，同时对社会和环境产生积极影响的投资机会。我们专注于构建具有韧性、能够产生可持续现金流的资产组合，并通过严谨分析与战略前瞻实现长期价值。我们以驾驭复杂投资环境的能力为荣，并依托在尽职调查、风险管理和资产估值方面的综合专业能力开展工作。
+
+专业能力
+
+我们的团队由在金融、房地产、可再生能源和科技领域拥有丰富经验的资深专业人士组成。我们在项目结构设计与管理方面积累了深厚经验，确保多元化项目与长期增长和稳定性保持一致。我们与行业领袖、政府机构及非营利组织建立战略合作关系，确保投资创造持久价值。
+
+全球视野，本地洞察
+
+我们立足全球，关注新兴市场与成熟市场，同时重点选择具备稳健经济基础与地缘政治稳定性的地区。我们的投资战略优先考虑鼓励增长与创新的司法辖区，为客户多样化需求提供定制化资本解决方案。
+
+致力于可持续增长
+
+Harmonia Fortuna 坚持负责任投资原则，确保投资决策符合环境可持续性与社会责任标准。我们相信真正的财务成功应当促进社会福祉，并致力于将 ESG（环境、社会与公司治理）因素纳入投资框架。
+
+欢迎加入 Harmonia Fortuna，与我们一起通过战略投资，协调金融增长与社会责任，共同开创更加光明与繁荣的未来。`,
+          back: '← 返回',
+          dark: '深色模式',
+          light: '浅色模式',
+          privacy: '隐私政策',
+          terms: '服务条款',
+        },
+
+        ru: {
+          title: 'О Harmonia Fortuna',
+          text: `О Harmonia Fortuna
+
+Harmonia Fortuna — инновационная компания по управлению альтернативными активами, ориентированная на поиск уникальных инвестиционных возможностей в различных секторах. Наша штаб-квартира расположена в Switzerland, и мы придерживаемся принципов прозрачности и высокого качества во всех направлениях деятельности.
+
+Наша инвестиционная философия
+
+Мы выявляем инвестиции, способные не только приносить высокую доходность, но и оказывать положительное влияние на общество и окружающую среду. Мы формируем устойчивый портфель активов с долгосрочным денежным потоком, применяя строгий анализ и стратегическое планирование.
+
+Экспертиза и возможности
+
+Наша команда состоит из опытных специалистов в области финансов, недвижимости, возобновляемой энергетики и технологий. Мы выстраиваем стратегические партнёрства с лидерами отрасли и государственными структурами для создания долгосрочной ценности.
+
+Глобальный охват, локальная экспертиза
+
+Мы работаем глобально, уделяя внимание как развивающимся, так и развитым рынкам, выбирая юрисдикции с устойчивой экономикой и политической стабильностью.
+
+Приверженность устойчивому развитию
+
+Мы интегрируем ESG-принципы в инвестиционную стратегию и считаем, что финансовый успех должен способствовать развитию общества.
+
+Присоединяйтесь к Harmonia Fortuna и создавайте устойчивое будущее вместе с нами.`,
+          back: '← Назад',
+          dark: 'Тёмный режим',
+          light: 'Светлый режим',
+          privacy: 'Конфиденциальность',
+          terms: 'Условия обслуживания',
+        },
+
+        ar: {
+          title: 'حول Harmonia Fortuna',
+          text: `حول Harmonia Fortuna
+
+تُعد Harmonia Fortuna شركة مبتكرة لإدارة الأصول البديلة، تركز على استكشاف فرص استثمارية فريدة عبر قطاعات متنوعة. يقع مقرنا الرئيسي في Switzerland ونلتزم بأعلى معايير الشفافية والتميز في جميع أنشطتنا.
+
+فلسفتنا الاستثمارية
+
+نتميز بتحديد الاستثمارات التي تحقق عوائد مرتفعة وتسهم إيجابياً في المجتمع والبيئة. نعمل على بناء محفظة أصول مرنة تولد تدفقات نقدية مستدامة من خلال تحليل دقيق ورؤية استراتيجية بعيدة المدى.
+
+الخبرات والقدرات
+
+يضم فريقنا محترفين ذوي خبرة في التمويل والعقارات والطاقة المتجددة والتكنولوجيا، ونعمل من خلال شراكات استراتيجية لضمان خلق قيمة طويلة الأمد.
+
+انتشار عالمي ورؤية محلية
+
+نركز على الأسواق الناشئة والمتقدمة ضمن بيئات اقتصادية مستقرة وجاذبة للنمو والابتكار.
+
+الالتزام بالنمو المستدام
+
+نؤمن بأن النجاح المالي الحقيقي يجب أن ينعكس إيجاباً على المجتمع، ولذلك ندمج معايير ESG ضمن إطارنا الاستثماري.
+
+انضموا إلى Harmonia Fortuna لصناعة مستقبل أكثر ازدهاراً واستدامة.`,
+          back: '← رجوع',
+          dark: 'الوضع الداكن',
+          light: 'الوضع الفاتح',
+          privacy: 'سياسة الخصوصية',
+          terms: 'الشروط',
+        },
+      };
+
+      let currentLang = 'en';
+
+      function updateModeButton() {
+        const t = translations[currentLang];
+        modeBtn.textContent = document.body.classList.contains('dark')
+          ? t.light
+          : t.dark;
+      }
+
+      function setLang(lang) {
+        const elements = [
+          title,
+          text,
+          backBtnTop,
+          modeBtn,
+          privacyBtn,
+          termsBtn,
+        ];
+
+        elements.forEach((el) => {
+          el.classList.remove('lang-fade-in');
+          el.classList.add('lang-fade-out');
+        });
+
+        setTimeout(() => {
+          document.body.classList.toggle('rtl', lang === 'ar');
+          document.documentElement.lang = lang;
+          currentLang = lang;
+          const t = translations[lang];
+
+          title.textContent = t.title;
+          text.textContent = t.text;
+          backBtnTop.textContent = t.back;
+          privacyBtn.textContent = t.privacy;
+          termsBtn.textContent = t.terms;
+          updateModeButton();
+
+          elements.forEach((el) => {
+            el.classList.remove('lang-fade-out');
+            el.classList.add('lang-fade-in');
+          });
+        }, 200);
+      }
+
+      document.getElementById('langMenu').addEventListener('click', (e) => {
+        if (e.target.dataset.lang) setLang(e.target.dataset.lang);
+      });
+
+      document.getElementById('modeBtn').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        updateModeButton();
+      });
+
+      document
+        .getElementById('backBtnTop')
+        .addEventListener('click', () => (window.location.href = 'menu.html'));
+
+      setLang('en');
+
+      const cursor = document.getElementById('cursor');
+      let cx = innerWidth / 2,
+        cy = innerHeight / 2,
+        tx = cx,
+        ty = cy;
+      addEventListener('mousemove', (e) => {
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      (function animateCursor() {
+        cx += (tx - cx) * 0.15;
+        cy += (ty - cy) * 0.15;
+        cursor.style.left = cx + 'px';
+        cursor.style.top = cy + 'px';
+        requestAnimationFrame(animateCursor);
+      })();
+    </script>
+  </body>
 </html>

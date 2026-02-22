@@ -1,389 +1,506 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
-<p class="p1"><span class="s1">content="</span></p>
-<p class="p1"><span class="s1">default-src 'self';</span></p>
-<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
-<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
-<p class="p1"><span class="s1">connect-src 'self';</span></p>
-<p class="p1"><span class="s1">object-src 'none';</span></p>
-<p class="p1"><span class="s1">base-uri 'self';</span></p>
-<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
-<p class="p1"><span class="s1">form-action 'self';</span></p>
-<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
-<p class="p1"><span class="s1">block-all-mixed-content;</span></p>
-<p class="p1"><span class="s1">"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Referrer-Policy" content="no-referrer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Frame-Options" content="DENY"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna — Login&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">:root{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.outer{min-height:100vh;padding:clamp(4px,1vw,8px);}</span></p>
-<p class="p1"><span class="s1">.inner{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(8px,2vw,16px));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:flex-start;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow:hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-top:clamp(120px,16vh,160px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .lang{right:auto;left:clamp(18px,3vw,40px);}</span></p>
-<p class="p1"><span class="s1">.lang span{margin-left:clamp(10px,1.5vw,16px);cursor:pointer;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Smooth language animation */</span></p>
-<p class="p1"><span class="s1">.lang-fade-out{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .35s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .35s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang-fade-in{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:opacity .5s cubic-bezier(.4,0,.2,1),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>transform .5s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.content{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:60%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width:400px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:left;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.back-top{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom:clamp(16px,3vh,22px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.back-top::after,</span></p>
-<p class="p1"><span class="s1">.actions span::after,</span></p>
-<p class="p1"><span class="s1">.footer span::after{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>content:'';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:-2px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:0;height:1px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:currentColor;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.back-top:hover::after,</span></p>
-<p class="p1"><span class="s1">.actions span:hover::after,</span></p>
-<p class="p1"><span class="s1">.footer span:hover::after{width:100%;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.title{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(20px,2.5vw,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.login-box{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(22px,4vh,30px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>flex-direction:column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap:clamp(14px,2.5vh,18px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.login-box input{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:transparent;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom:1px solid rgba(0,0,0,.2);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:8px 2px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.3vw,14px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>outline:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark .login-box input{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom:1px solid rgba(255,255,255,.2);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.login-box input:focus{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom:1px solid currentColor;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.login-box button{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:transparent;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border:1px solid currentColor;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:8px 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(11px,1.2vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">body:not(.dark) .login-box button:hover{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:#fff;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark .login-box button:hover{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:#fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:#000;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.error{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,12px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(-4px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:#c44;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.error.show{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.actions{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(40px,6vh,55px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.actions span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.footer{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(14px,3vh,20px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.26;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.footer span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0 clamp(4px,1vw,6px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.cursor-dot{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:4px;height:4px;border-radius:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>pointer-events:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index:9999;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="back-top" id="backBtnTop"&gt;← Back&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="title" id="title"&gt;Login&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;form class="login-box" id="loginForm" autocomplete="off" novalidate&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="username" maxlength="32"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="password" id="password" maxlength="64"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="error" id="errorMsg"&gt;Invalid credentials&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button type="submit" id="loginBtn"&gt;Login&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="modeBtn"&gt;Dark Mode&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="privacyBtn"&gt;Privacy Policy&lt;/span&gt; |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span id="termsBtn"&gt;Terms of Service&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">"use strict";</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Languages */</span></p>
-<p class="p1"><span class="s1">const translations={</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>en:{title:'Login',user:'Username',pass:'Password',login:'Login',error:'Invalid credentials',back:'← Back',dark:'Dark Mode',privacy:'Privacy Policy',terms:'Terms of Service'},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cn:{title:'登录',user:'用户名',pass:'密码',login:'登录',error:'凭证无效',back:'← 返回',dark:'深色模式',privacy:'隐私政策',terms:'服务条款'},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ru:{title:'Вход',user:'Имя пользователя',pass:'Пароль',login:'Войти',error:'Неверные данные',back:'← Назад',dark:'Тёмный режим',privacy:'Конфиденциальность',terms:'Условия'},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ar:{title:'تسجيل الدخول',user:'اسم المستخدم',pass:'كلمة المرور',login:'دخول',error:'بيانات غير صحيحة',back:'← رجوع',dark:'الوضع الداكن',privacy:'سياسة الخصوصية',terms:'الشروط'}</span></p>
-<p class="p1"><span class="s1">};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function setLang(lang){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const elements=[title,username,password,loginBtn,errorMsg,backBtnTop,modeBtn,privacyBtn,termsBtn];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.remove("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.add("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.body.classList.toggle("rtl",lang==="ar");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.documentElement.lang=lang;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const t=translations[lang];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title.textContent=t.title;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>username.placeholder=t.user;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>password.placeholder=t.pass;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>loginBtn.textContent=t.login;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>errorMsg.textContent=t.error;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>backBtnTop.textContent=t.back;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>modeBtn.textContent=t.dark;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>privacyBtn.textContent=t.privacy;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>termsBtn.textContent=t.terms;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.remove("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.add("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},200);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">langMenu.addEventListener("click",e=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(e.target.dataset.lang){setLang(e.target.dataset.lang);}</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">setLang("en");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">modeBtn.addEventListener("click",()=&gt;document.body.classList.toggle("dark"));</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Security */</span></p>
-<p class="p1"><span class="s1">let attempts=0;</span></p>
-<p class="p1"><span class="s1">let lockUntil=0;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function secureCompare(a,b){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(a.length!==b.length) return false;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let result=0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>for(let i=0;i&lt;a.length;i++){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>result|=a.charCodeAt(i)^b.charCodeAt(i);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>return result===0;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">loginForm.addEventListener("submit",e=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>e.preventDefault();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(Date.now()&lt;lockUntil) return;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const user=username.value.trim();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const pass=password.value.trim();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(!/^[a-zA-Z0-9._-]{3,32}$/.test(user)){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>showError();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const ok = secureCompare(user,"admin") &amp;&amp;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>secureCompare(pass,"harmonia");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(ok){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>alert("Login successful");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}else{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>attempts++;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if(attempts&gt;=5){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>lockUntil=Date.now()+10000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>attempts=0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>showError();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function showError(){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>errorMsg.classList.add("show");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;errorMsg.classList.remove("show"),2500);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Cursor */</span></p>
-<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
-<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
-<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
-<p class="p1"><span class="s1">(function animateCursor(){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cx+=(tx-cx)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cy+=(ty-cy)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.left=cx+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.top=cy+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animateCursor);</span></p>
-<p class="p1"><span class="s1">})();</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+default-src 'self';
+script-src 'self' 'unsafe-inline';
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src https://fonts.gstatic.com;
+img-src 'self' data:;
+connect-src 'self';
+object-src 'none';
+base-uri 'self';
+frame-ancestors 'none';
+form-action 'self';
+upgrade-insecure-requests;
+block-all-mixed-content;
+"
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="no-referrer" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+
+    <title>Harmonia Fortuna — Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="public/HF Logo 32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="public/HF Logo.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="icon" href="public/HF Logo.svg" type="image/svg+xml" />
+
+    <style>
+      :root {
+        --page-bg: #f6f6f6;
+        --container-bg: #f9f9f9;
+        --text: #000;
+        --cursor: #777;
+      }
+      body.dark {
+        --page-bg: #0f0f0f;
+        --container-bg: #121212;
+        --text: #fff;
+        --cursor: #aaa;
+      }
+      body {
+        margin: 0;
+        background: var(--page-bg);
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+        transition: 0.4s;
+        cursor: none;
+        user-select: none;
+      }
+      body.rtl {
+        direction: rtl;
+      }
+
+      .outer {
+        min-height: 100vh;
+        padding: clamp(4px, 1vw, 8px);
+      }
+      .inner {
+        min-height: calc(100vh - clamp(8px, 2vw, 16px));
+        background: linear-gradient(
+          to bottom,
+          var(--container-bg),
+          rgba(0, 0, 0, 0.01)
+        );
+        border-radius: 18px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 0;
+      }
+
+      .lang {
+        position: absolute;
+        top: clamp(18px, 3vh, 28px);
+        right: clamp(18px, 3vw, 40px);
+        font-size: clamp(9px, 1vw, 13px);
+        opacity: 0.35;
+      }
+      body.rtl .lang {
+        right: auto;
+        left: clamp(18px, 3vw, 40px);
+      }
+      .lang span {
+        margin-left: clamp(10px, 1.5vw, 16px);
+        cursor: pointer;
+      }
+
+      .lang-fade-out {
+        opacity: 0;
+        transform: translateY(3px);
+        transition:
+          opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .lang-fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        transition:
+          opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .content {
+        width: 60%;
+        max-width: 400px;
+        text-align: left;
+      }
+
+      .back-top {
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: clamp(16px, 3vh, 22px);
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+      }
+      .back-top::after,
+      .actions span::after,
+      .footer span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background: currentColor;
+        transition: 0.3s;
+      }
+      .back-top:hover::after,
+      .actions span:hover::after,
+      .footer span:hover::after {
+        width: 100%;
+      }
+
+      .title {
+        font-size: clamp(20px, 2.5vw, 28px);
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+
+      .login-box {
+        margin-top: clamp(22px, 4vh, 30px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(14px, 2.5vh, 18px);
+      }
+
+      .login-box input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 8px 2px;
+        font-size: clamp(12px, 1.3vw, 14px);
+        color: var(--text);
+        outline: none;
+        transition: 0.3s;
+      }
+      body.dark .login-box input {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .login-box input:focus {
+        border-bottom: 1px solid currentColor;
+      }
+
+      .login-box button {
+        background: transparent;
+        border: 1px solid currentColor;
+        padding: 8px 0;
+        font-size: clamp(11px, 1.2vw, 13px);
+        cursor: pointer;
+        transition: 0.3s;
+        color: var(--text);
+      }
+
+      body:not(.dark) .login-box button:hover {
+        background: #000;
+        color: #fff;
+      }
+      body.dark .login-box button:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      .error {
+        font-size: clamp(10px, 1vw, 12px);
+        opacity: 0;
+        transform: translateY(-4px);
+        transition: 0.3s;
+        color: #c44;
+      }
+      .error.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .actions {
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+      }
+      .actions span {
+        margin: 0 8px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(8px, 0.8vw, 11px);
+        opacity: 0.26;
+        text-align: center;
+      }
+      .footer span {
+        margin: 0 clamp(4px, 1vw, 6px);
+        cursor: pointer;
+        position: relative;
+      }
+
+      .cursor-dot {
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--cursor);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+
+      /* ===== MOBILE REAL SPACE REDUCTION (TOP & BOTTOM) ===== */
+      @media (max-width: 600px) {
+        /* Remove large top padding */
+        .inner {
+          padding-top: 5px !important;
+        }
+
+        /* Reduce space under Back button */
+        .back-top {
+          margin-bottom: 8px !important;
+        }
+
+        /* Reduce space above inputs */
+        .login-box {
+          margin-top: 12px !important;
+          gap: 12px !important;
+        }
+
+        /* Reduce space under Login button */
+        .login-box button {
+          margin-top: 4px !important;
+        }
+
+        /* Keep Dark Mode in balanced lower position */
+        .actions {
+          bottom: 40px !important;
+        }
+
+        /* Footer single line and slightly tighter */
+        .footer {
+          bottom: 10px !important;
+          white-space: nowrap !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <div class="outer">
+      <div class="inner">
+        <div class="lang" id="langMenu">
+          <span data-lang="en">EN</span>
+          <span data-lang="cn">中文</span>
+          <span data-lang="ru">RU</span>
+          <span data-lang="ar">AR</span>
+        </div>
+
+        <div class="content">
+          <a href="/menu.html" class="back-top" id="backBtnTop">← Back</a>
+          <div class="title" id="title">Login</div>
+
+          <form class="login-box" id="loginForm" autocomplete="off" novalidate>
+            <input type="text" id="username" maxlength="32" />
+            <input type="password" id="password" maxlength="64" />
+            <div class="error" id="errorMsg">Invalid credentials</div>
+            <button type="submit" id="loginBtn">Login</button>
+          </form>
+        </div>
+
+        <div class="actions">
+          <span id="modeBtn">Dark Mode</span>
+        </div>
+
+        <div class="footer">
+          ©<span id="year"></span> Harmonia Fortuna |
+          <span id="privacyBtn">Privacy Policy</span> |
+          <span id="termsBtn">Terms of Service</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      'use strict';
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const translations = {
+        en: {
+          title: 'Login',
+          user: 'Username',
+          pass: 'Password',
+          login: 'Login',
+          error: 'Invalid credentials',
+          back: '← Back',
+          dark: 'Dark Mode',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+        },
+        cn: {
+          title: '登录',
+          user: '用户名',
+          pass: '密码',
+          login: '登录',
+          error: '凭证无效',
+          back: '← 返回',
+          dark: '深色模式',
+          privacy: '隐私政策',
+          terms: '服务条款',
+        },
+        ru: {
+          title: 'Вход',
+          user: 'Имя пользователя',
+          pass: 'Пароль',
+          login: 'Войти',
+          error: 'Неверные данные',
+          back: '← Назад',
+          dark: 'Тёмный режим',
+          privacy: 'Конфиденциальность',
+          terms: 'Условия',
+        },
+        ar: {
+          title: 'تسجيل الدخول',
+          user: 'اسم المستخدم',
+          pass: 'كلمة المرور',
+          login: 'دخول',
+          error: 'بيانات غير صحيحة',
+          back: '← رجوع',
+          dark: 'الوضع الداكن',
+          privacy: 'سياسة الخصوصية',
+          terms: 'الشروط',
+        },
+      };
+
+      function setLang(lang) {
+        const elements = [
+          title,
+          username,
+          password,
+          loginBtn,
+          errorMsg,
+          backBtnTop,
+          modeBtn,
+          privacyBtn,
+          termsBtn,
+        ];
+
+        elements.forEach((el) => {
+          el.classList.remove('lang-fade-in');
+          el.classList.add('lang-fade-out');
+        });
+
+        setTimeout(() => {
+          document.body.classList.toggle('rtl', lang === 'ar');
+          document.documentElement.lang = lang;
+
+          const t = translations[lang];
+          title.textContent = t.title;
+          username.placeholder = t.user;
+          password.placeholder = t.pass;
+          loginBtn.textContent = t.login;
+          errorMsg.textContent = t.error;
+          backBtnTop.textContent = t.back;
+          modeBtn.textContent = t.dark;
+          privacyBtn.textContent = t.privacy;
+          termsBtn.textContent = t.terms;
+
+          elements.forEach((el) => {
+            el.classList.remove('lang-fade-out');
+            el.classList.add('lang-fade-in');
+          });
+        }, 200);
+      }
+
+      langMenu.addEventListener('click', (e) => {
+        if (e.target.dataset.lang) {
+          setLang(e.target.dataset.lang);
+        }
+      });
+
+      setLang('en');
+      modeBtn.textContent = 'Dark Mode';
+
+      modeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        modeBtn.textContent = document.body.classList.contains('dark')
+          ? 'Light Mode'
+          : 'Dark Mode';
+      });
+
+      let attempts = 0;
+      let lockUntil = 0;
+
+      function secureCompare(a, b) {
+        if (a.length !== b.length) return false;
+        let result = 0;
+        for (let i = 0; i < a.length; i++) {
+          result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+        }
+        return result === 0;
+      }
+
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (Date.now() < lockUntil) return;
+
+        const user = username.value.trim();
+        const pass = password.value.trim();
+
+        if (!/^[a-zA-Z0-9._-]{3,32}$/.test(user)) {
+          showError();
+          return;
+        }
+
+        const ok =
+          secureCompare(user, 'admin') && secureCompare(pass, 'harmonia');
+
+        if (ok) {
+          alert('Login successful');
+        } else {
+          attempts++;
+          if (attempts >= 5) {
+            lockUntil = Date.now() + 10000;
+            attempts = 0;
+          }
+          showError();
+        }
+      });
+
+      function showError() {
+        errorMsg.classList.add('show');
+        setTimeout(() => errorMsg.classList.remove('show'), 2500);
+      }
+
+      const cursor = document.getElementById('cursor');
+      let cx = innerWidth / 2,
+        cy = innerHeight / 2,
+        tx = cx,
+        ty = cy;
+      addEventListener('mousemove', (e) => {
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      (function animateCursor() {
+        cx += (tx - cx) * 0.15;
+        cy += (ty - cy) * 0.15;
+        cursor.style.left = cx + 'px';
+        cursor.style.top = cy + 'px';
+        requestAnimationFrame(animateCursor);
+      })();
+    </script>
+  </body>
 </html>

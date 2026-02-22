@@ -1,438 +1,519 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Content-Security-Policy"</span></p>
-<p class="p1"><span class="s1">content="</span></p>
-<p class="p1"><span class="s1">default-src 'self';</span></p>
-<p class="p1"><span class="s1">script-src 'self' 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">style-src 'self' https://fonts.googleapis.com 'unsafe-inline';</span></p>
-<p class="p1"><span class="s1">font-src https://fonts.gstatic.com;</span></p>
-<p class="p1"><span class="s1">img-src 'self' data:;</span></p>
-<p class="p1"><span class="s1">connect-src 'self';</span></p>
-<p class="p1"><span class="s1">object-src 'none';</span></p>
-<p class="p1"><span class="s1">base-uri 'self';</span></p>
-<p class="p1"><span class="s1">frame-ancestors 'none';</span></p>
-<p class="p1"><span class="s1">form-action 'self';</span></p>
-<p class="p1"><span class="s1">upgrade-insecure-requests;</span></p>
-<p class="p1"><span class="s1">block-all-mixed-content;</span></p>
-<p class="p1"><span class="s1">"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="Referrer-Policy" content="no-referrer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta http-equiv="X-Frame-Options" content="DENY"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;title&gt;Harmonia Fortuna — Business Inquiries&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1">:root{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#f6f6f6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#f9f9f9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#777;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--page-bg:#0f0f0f;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--container-bg:#121212;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--text:#fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--cursor:#aaa;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--page-bg);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family:'Inter',sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.4s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>user-select:none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl{direction:rtl;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.outer{min-height:100vh;padding:clamp(6px,2vw,14px);}</span></p>
-<p class="p1"><span class="s1">.inner{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height:calc(100vh - clamp(12px,3vw,28px));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:linear-gradient(to bottom,var(--container-bg),rgba(0,0,0,0.01));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius:18px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow:0 0 0 1px rgba(0,0,0,.015);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content:center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow:hidden;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.back-top{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .back-top{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top:clamp(18px,3vh,28px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(9px,1vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.35;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .lang{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right:auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:clamp(18px,3vw,40px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang span{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-left:clamp(10px,1.5vw,16px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.lang-fade-out{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(3px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.35s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.lang-fade-in{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateY(0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.5s cubic-bezier(.4,0,.2,1);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.content{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:min(92%,500px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:left;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl .content{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:right;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.title{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(20px,3vw,30px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.subtitle{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:6px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.4vw,14px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight:300;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>letter-spacing:.5px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.65;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line-height:1.5;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.form-box{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:clamp(16px,3vh,24px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display:flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>flex-direction:column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap:clamp(10px,2vh,14px);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.form-box input,</span></p>
-<p class="p1"><span class="s1">.form-box textarea{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:transparent;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom:1px solid rgba(0,0,0,.2);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:8px 2px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(13px,1.3vw,14px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>outline:none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.dark .form-box input,</span></p>
-<p class="p1"><span class="s1">body.dark .form-box textarea{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom:1px solid rgba(255,255,255,.2);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body.rtl input,</span></p>
-<p class="p1"><span class="s1">body.rtl textarea{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:right;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">textarea{resize:none;min-height:80px;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.checkbox-row{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(11px,1.2vw,12px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.7;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">button{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:transparent;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border:1px solid currentColor;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding:10px 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(12px,1.3vw,13px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor:pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color:var(--text);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:6px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">body:not(.dark) button:hover{background:#000;color:#fff;}</span></p>
-<p class="p1"><span class="s1">body.dark button:hover{background:#fff;color:#000;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.notification{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(11px,1.2vw,12px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top:4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition:.3s;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.notification.error{color:#c44;}</span></p>
-<p class="p1"><span class="s1">.notification.success{color:#2a8a2a;}</span></p>
-<p class="p1"><span class="s1">.notification.show{opacity:1;}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.actions{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(40px,6vh,55px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(10px,1vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.6;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.footer{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>bottom:clamp(14px,3vh,20px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translateX(-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size:clamp(8px,.8vw,11px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity:.26;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align:center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.cursor-dot{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position:fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width:4px;height:4px;border-radius:50%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:var(--cursor);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>pointer-events:none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform:translate(-50%,-50%);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index:9999;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="cursor-dot" id="cursor"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="outer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="inner"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="back-top" id="backBtn"&gt;← Back&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="lang" id="langMenu"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="en"&gt;EN&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="cn"&gt;中文&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ru"&gt;RU&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span data-lang="ar"&gt;AR&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="title" id="title"&gt;Business Inquiries&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="subtitle" id="subtitle"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>We serve a limited number of families through bespoke, long-term mandates. For confidential inquiries, please use the form below.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;form class="form-box" id="contactForm" autocomplete="off" novalidate&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="company" style="display:none"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="fullname" placeholder="Full Name"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="email" id="email" placeholder="E-Mail"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="tel" id="phone" placeholder="Telefon"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;textarea id="message" placeholder="Message"&gt;&lt;/textarea&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="checkbox-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;input type="checkbox" id="consent"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;label for="consent" id="consentLabel"&gt;I agree to be contacted&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button type="button" id="sendBtn"&gt;Send Inquiry&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="notification error" id="errorMsg"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="notification success" id="successMsg"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="actions"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span onclick="document.body.classList.toggle('dark')"&gt;Dark Mode&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>©&lt;span id="year"&gt;&lt;/span&gt; Harmonia Fortuna |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span onclick="window.location.href='privacy.html'"&gt;Privacy Policy&lt;/span&gt; |</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span onclick="window.location.href='terms.html'"&gt;Terms of Service&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">"use strict";</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">document.getElementById("year").textContent=new Date().getFullYear();</span></p>
-<p class="p1"><span class="s1">backBtn.onclick=()=&gt;window.location.href="menu.html";</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Language translations */</span></p>
-<p class="p1"><span class="s1">const translations={</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>en:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title:"Business Inquiries",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:"We serve a limited number of families through bespoke, long-term mandates. For confidential inquiries, please use the form below.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>back:"← Back",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>name:"Full Name",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>email:"E-Mail",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phone:"Telefon",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>message:"Message",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>consent:"I agree to be contacted",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>send:"Send Inquiry",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>error:"All fields must be completed correctly.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cooldown:"Please wait 60 seconds before sending again.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>success:"Inquiry sent successfully."</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cn:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title:"商务咨询",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:"我们仅为少数家族提供定制化的长期投资委托。若有保密咨询需求，请通过下方表格联系。",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>back:"← 返回",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>name:"姓名",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>email:"电子邮件",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phone:"电话",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>message:"留言",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>consent:"我同意被联系",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>send:"发送咨询",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>error:"请正确填写所有字段。",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cooldown:"请等待60秒后再次发送。",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>success:"咨询已成功发送。"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ru:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title:"Деловые запросы",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:"Мы обслуживаем ограниченное число семей в рамках индивидуальных долгосрочных мандатов. Для конфиденциального запроса воспользуйтесь формой ниже.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>back:"← Назад",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>name:"Полное имя",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>email:"Электронная почта",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phone:"Телефон",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>message:"Сообщение",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>consent:"Я согласен на обратную связь",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>send:"Отправить запрос",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>error:"Все поля должны быть заполнены корректно.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cooldown:"Подождите 60 секунд перед повторной отправкой.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>success:"Запрос успешно отправлен."</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>ar:{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title:"الاستفسارات التجارية",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle:"نخدم عدداً محدوداً من العائلات من خلال تفويضات استثمارية مخصصة وطويلة الأجل. للاستفسارات السرية، يرجى استخدام النموذج أدناه.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>back:"رجوع →",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>name:"الاسم الكامل",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>email:"البريد الإلكتروني",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phone:"الهاتف",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>message:"الرسالة",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>consent:"أوافق على أن يتم التواصل معي",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>send:"إرسال الطلب",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>error:"يجب ملء جميع الحقول بشكل صحيح.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cooldown:"يرجى الانتظار 60 ثانية قبل الإرسال مرة أخرى.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>success:"تم إرسال الطلب بنجاح."</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">langMenu.addEventListener("click",e=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(!e.target.dataset.lang) return;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const lang=e.target.dataset.lang;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const t=translations[lang];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const elements=[title,subtitle,backBtn,fullname,email,phone,message,sendBtn,consentLabel];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.remove("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>el.classList.add("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.body.classList.toggle("rtl",lang==="ar");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.documentElement.lang=lang;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>title.textContent=t.title;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>subtitle.textContent=t.subtitle;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>backBtn.textContent=t.back;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>fullname.placeholder=t.name;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>email.placeholder=t.email;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>phone.placeholder=t.phone;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>message.placeholder=t.message;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>consentLabel.textContent=t.consent;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>sendBtn.textContent=t.send;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>elements.forEach(el=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.remove("lang-fade-out");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>el.classList.add("lang-fade-in");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>},200);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">phone.addEventListener("input",()=&gt;phone.value=phone.value.replace(/[^0-9]/g,''));</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">let lastSubmit=0;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">sendBtn.addEventListener("click",()=&gt;{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const lang=document.documentElement.lang || "en";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const t=translations[lang];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const now=Date.now();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(now-lastSubmit&lt;60000){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>showError(t.cooldown);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(company.value) return;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const emailValid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if(!fullname.value.trim() || !emailValid || !phone.value.trim() || !message.value.trim() || !consent.checked){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>showError(t.error);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>lastSubmit=Date.now();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>showSuccess(t.success);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>contactForm.reset();</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">function showError(msg){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>errorMsg.textContent=msg;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>errorMsg.classList.add("show");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>successMsg.classList.remove("show");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;errorMsg.classList.remove("show"),4000);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">function showSuccess(msg){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>successMsg.textContent=msg;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>successMsg.classList.add("show");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>errorMsg.classList.remove("show");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;successMsg.classList.remove("show"),4000);</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">const cursor=document.getElementById("cursor");</span></p>
-<p class="p1"><span class="s1">let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;</span></p>
-<p class="p1"><span class="s1">addEventListener("mousemove",e=&gt;{tx=e.clientX;ty=e.clientY;});</span></p>
-<p class="p1"><span class="s1">(function animateCursor(){</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cx+=(tx-cx)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cy+=(ty-cy)*0.15;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.left=cx+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor.style.top=cy+"px";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>requestAnimationFrame(animateCursor);</span></p>
-<p class="p1"><span class="s1">})();</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+default-src 'self';
+script-src 'self' 'unsafe-inline';
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src https://fonts.gstatic.com;
+img-src 'self' data:;
+connect-src 'self';
+object-src 'none';
+base-uri 'self';
+frame-ancestors 'none';
+form-action 'self';
+upgrade-insecure-requests;
+block-all-mixed-content;
+"
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="no-referrer" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+
+    <title>Harmonia Fortuna — Business Inquiries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="public/HF Logo 32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="public/HF Logo.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="icon" href="public/HF Logo.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --page-bg: #f6f6f6;
+        --container-bg: #f9f9f9;
+        --text: #000;
+        --cursor: #777;
+      }
+      body.dark {
+        --page-bg: #0f0f0f;
+        --container-bg: #121212;
+        --text: #fff;
+        --cursor: #aaa;
+      }
+      body {
+        margin: 0;
+        background: var(--page-bg);
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+        transition: 0.4s;
+        cursor: none;
+        user-select: none;
+      }
+      body.rtl {
+        direction: rtl;
+      }
+
+      .outer {
+        min-height: 100vh;
+        padding: clamp(6px, 2vw, 14px);
+      }
+      .inner {
+        min-height: calc(100vh - clamp(12px, 3vw, 28px));
+        background: linear-gradient(
+          to bottom,
+          var(--container-bg),
+          rgba(0, 0, 0, 0.01)
+        );
+        border-radius: 18px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .back-top {
+        position: absolute;
+        top: clamp(18px, 3vh, 28px);
+        left: clamp(18px, 3vw, 40px);
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      body.rtl .back-top {
+        left: auto;
+        right: clamp(18px, 3vw, 40px);
+      }
+
+      .lang {
+        position: absolute;
+        top: clamp(18px, 3vh, 28px);
+        right: clamp(18px, 3vw, 40px);
+        font-size: clamp(9px, 1vw, 13px);
+        opacity: 0.35;
+      }
+      body.rtl .lang {
+        right: auto;
+        left: clamp(18px, 3vw, 40px);
+      }
+      .lang span {
+        margin-left: clamp(10px, 1.5vw, 16px);
+        cursor: pointer;
+      }
+
+      .lang-fade-out {
+        opacity: 0;
+        transform: translateY(3px);
+        transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .lang-fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .content {
+        width: min(92%, 500px);
+        text-align: left;
+      }
+      body.rtl .content {
+        text-align: right;
+      }
+
+      .title {
+        font-size: clamp(20px, 3vw, 30px);
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+
+      .subtitle {
+        margin-top: 6px;
+        font-size: clamp(12px, 1.4vw, 14px);
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        opacity: 0.65;
+        line-height: 1.5;
+      }
+
+      .form-box {
+        margin-top: clamp(16px, 3vh, 24px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 2vh, 14px);
+      }
+
+      .form-box input,
+      .form-box textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 8px 2px;
+        font-size: clamp(13px, 1.3vw, 14px);
+        color: var(--text);
+        outline: none;
+      }
+      body.dark .form-box input,
+      body.dark .form-box textarea {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      body.rtl input,
+      body.rtl textarea {
+        text-align: right;
+      }
+
+      textarea {
+        resize: none;
+        min-height: 80px;
+      }
+
+      .checkbox-row {
+        font-size: clamp(11px, 1.2vw, 12px);
+        opacity: 0.7;
+      }
+
+      button {
+        background: transparent;
+        border: 1px solid currentColor;
+        padding: 10px 0;
+        font-size: clamp(12px, 1.3vw, 13px);
+        cursor: pointer;
+        transition: 0.3s;
+        color: var(--text);
+        margin-top: 6px;
+      }
+      body:not(.dark) button:hover {
+        background: #000;
+        color: #fff;
+      }
+      body.dark button:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      .notification {
+        font-size: clamp(11px, 1.2vw, 12px);
+        margin-top: 4px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .notification.error {
+        color: #c44;
+      }
+      .notification.success {
+        color: #2a8a2a;
+      }
+      .notification.show {
+        opacity: 1;
+      }
+
+      .actions {
+        position: absolute;
+        bottom: clamp(40px, 6vh, 55px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(10px, 1vw, 11px);
+        opacity: 0.6;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: clamp(14px, 3vh, 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(8px, 0.8vw, 11px);
+        opacity: 0.26;
+        text-align: center;
+      }
+
+      .cursor-dot {
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--cursor);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+
+      /* ===== MOBILE FOOTER REFINEMENTS ===== */
+      @media (max-width: 600px) {
+        /* Footer single line */
+        .footer {
+          white-space: nowrap !important;
+          bottom: 8px !important;
+        }
+
+        /* Reduce space between form column and footer */
+        .actions {
+          bottom: 45px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <div class="outer">
+      <div class="inner">
+        <div class="back-top" id="backBtn">← Back</div>
+
+        <div class="lang" id="langMenu">
+          <span data-lang="en">EN</span>
+          <span data-lang="cn">中文</span>
+          <span data-lang="ru">RU</span>
+          <span data-lang="ar">AR</span>
+        </div>
+
+        <div class="content">
+          <div class="title" id="title">Business Inquiries</div>
+          <div class="subtitle" id="subtitle">
+            We serve a limited number of families through bespoke, long-term
+            mandates. For confidential inquiries, please use the form below.
+          </div>
+          <form class="form-box" id="contactForm" autocomplete="off" novalidate>
+            <input type="text" id="company" style="display: none" />
+            <input type="text" id="fullname" placeholder="Full Name" />
+            <input type="email" id="email" placeholder="E-Mail" />
+            <input type="tel" id="phone" placeholder="Telefon" />
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="consent" />
+              <label for="consent" id="consentLabel"
+                >I agree to be contacted</label
+              >
+            </div>
+
+            <button type="button" id="sendBtn">Send Inquiry</button>
+            <div class="notification error" id="errorMsg"></div>
+            <div class="notification success" id="successMsg"></div>
+          </form>
+        </div>
+
+        <div class="actions">
+          <span id="modeToggle">Dark Mode</span>
+        </div>
+
+        <div class="footer">
+          ©<span id="year"></span> Harmonia Fortuna |
+          <span onclick="window.location.href = 'privacy.html'"
+            >Privacy Policy</span
+          >
+          |
+          <span onclick="window.location.href = 'terms.html'"
+            >Terms of Service</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      'use strict';
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+      backBtn.onclick = () => (window.location.href = 'menu.html');
+
+      const modeToggle = document.getElementById('modeToggle');
+      modeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        modeToggle.textContent = document.body.classList.contains('dark')
+          ? 'Light Mode'
+          : 'Dark Mode';
+      });
+
+      const translations = {
+        en: {
+          title: 'Business Inquiries',
+          subtitle:
+            'We serve a limited number of families through bespoke, long-term mandates. For confidential inquiries, please use the form below.',
+          back: '← Back',
+          name: 'Full Name',
+          email: 'E-Mail',
+          phone: 'Telefon',
+          message: 'Message',
+          consent: 'I agree to be contacted',
+          send: 'Send Inquiry',
+          error: 'All fields must be completed correctly.',
+          cooldown: 'Please wait 60 seconds before sending again.',
+          success: 'Inquiry sent successfully.',
+        },
+        cn: {
+          title: '商务咨询',
+          subtitle:
+            '我们仅为少数家族提供定制化的长期投资委托。若有保密咨询需求，请通过下方表格联系。',
+          back: '← 返回',
+          name: '姓名',
+          email: '电子邮件',
+          phone: '电话',
+          message: '留言',
+          consent: '我同意被联系',
+          send: '发送咨询',
+          error: '请正确填写所有字段。',
+          cooldown: '请等待60秒后再次发送。',
+          success: '咨询已成功发送。',
+        },
+        ru: {
+          title: 'Деловые запросы',
+          subtitle:
+            'Мы обслуживаем ограниченное число семей в рамках индивидуальных долгосрочных мандатов. Для конфиденциального запроса воспользуйтесь формой ниже.',
+          back: '← Назад',
+          name: 'Полное имя',
+          email: 'Электронная почта',
+          phone: 'Телефон',
+          message: 'Сообщение',
+          consent: 'Я согласен на обратную связь',
+          send: 'Отправить запрос',
+          error: 'Все поля должны быть заполнены корректно.',
+          cooldown: 'Подождите 60 секунд перед повторной отправкой.',
+          success: 'Запрос успешно отправлен.',
+        },
+        ar: {
+          title: 'الاستفسارات التجارية',
+          subtitle:
+            'نخدم عدداً محدوداً من العائلات من خلال تفويضات استثمارية مخصصة وطويلة الأجل. للاستفسارات السرية، يرجى استخدام النموذج أدناه.',
+          back: 'رجوع →',
+          name: 'الاسم الكامل',
+          email: 'البريد الإلكتروني',
+          phone: 'الهاتف',
+          message: 'الرسالة',
+          consent: 'أوافق على أن يتم التواصل معي',
+          send: 'إرسال الطلب',
+          error: 'يجب ملء جميع الحقول بشكل صحيح.',
+          cooldown: 'يرجى الانتظار 60 ثانية قبل الإرسال مرة أخرى.',
+          success: 'تم إرسال الطلب بنجاح.',
+        },
+      };
+
+      langMenu.addEventListener('click', (e) => {
+        if (!e.target.dataset.lang) return;
+        const lang = e.target.dataset.lang;
+        const t = translations[lang];
+
+        const elements = [
+          title,
+          subtitle,
+          backBtn,
+          fullname,
+          email,
+          phone,
+          message,
+          sendBtn,
+          consentLabel,
+        ];
+        elements.forEach((el) => {
+          el.classList.remove('lang-fade-in');
+          el.classList.add('lang-fade-out');
+        });
+
+        setTimeout(() => {
+          document.body.classList.toggle('rtl', lang === 'ar');
+          document.documentElement.lang = lang;
+
+          title.textContent = t.title;
+          subtitle.textContent = t.subtitle;
+          backBtn.textContent = t.back;
+          fullname.placeholder = t.name;
+          email.placeholder = t.email;
+          phone.placeholder = t.phone;
+          message.placeholder = t.message;
+          consentLabel.textContent = t.consent;
+          sendBtn.textContent = t.send;
+
+          elements.forEach((el) => {
+            el.classList.remove('lang-fade-out');
+            el.classList.add('lang-fade-in');
+          });
+        }, 200);
+      });
+
+      phone.addEventListener(
+        'input',
+        () => (phone.value = phone.value.replace(/[^0-9]/g, '')),
+      );
+
+      let lastSubmit = 0;
+
+      sendBtn.addEventListener('click', () => {
+        const lang = document.documentElement.lang || 'en';
+        const t = translations[lang];
+        const now = Date.now();
+
+        if (now - lastSubmit < 60000) {
+          showError(t.cooldown);
+          return;
+        }
+
+        if (company.value) return;
+
+        const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+
+        if (
+          !fullname.value.trim() ||
+          !emailValid ||
+          !phone.value.trim() ||
+          !message.value.trim() ||
+          !consent.checked
+        ) {
+          showError(t.error);
+          return;
+        }
+
+        lastSubmit = Date.now();
+        showSuccess(t.success);
+        contactForm.reset();
+      });
+
+      function showError(msg) {
+        errorMsg.textContent = msg;
+        errorMsg.classList.add('show');
+        successMsg.classList.remove('show');
+        setTimeout(() => errorMsg.classList.remove('show'), 4000);
+      }
+      function showSuccess(msg) {
+        successMsg.textContent = msg;
+        successMsg.classList.add('show');
+        errorMsg.classList.remove('show');
+        setTimeout(() => successMsg.classList.remove('show'), 4000);
+      }
+
+      const cursor = document.getElementById('cursor');
+      let cx = innerWidth / 2,
+        cy = innerHeight / 2,
+        tx = cx,
+        ty = cy;
+      addEventListener('mousemove', (e) => {
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      (function animateCursor() {
+        cx += (tx - cx) * 0.15;
+        cy += (ty - cy) * 0.15;
+        cursor.style.left = cx + 'px';
+        cursor.style.top = cy + 'px';
+        requestAnimationFrame(animateCursor);
+      })();
+    </script>
+  </body>
 </html>
