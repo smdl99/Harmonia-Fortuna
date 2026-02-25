@@ -37,6 +37,10 @@
     direction: rtl;
   }
 
+  * {
+    cursor: none;
+  }
+
   .prose {
     line-height: 1.9;
   }
