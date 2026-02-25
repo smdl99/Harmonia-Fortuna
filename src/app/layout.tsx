@@ -36,7 +36,6 @@ export default async function RootLayout({
           theme === 'dark' && 'dark',
           locale === 'ar' && 'rtl',
           sans.variable,
-          'antialiased',
         )}
       >
         <NextIntlClientProvider>
