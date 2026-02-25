@@ -79,7 +79,7 @@ export default function TimeItem({ label, zone }: TimeItemProps) {
         />
       </svg>
 
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col">
         <span className="text-sm text-secondary font-semibold">{`${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`}</span>
         <span className="text-xs text-muted">{label}</span>
       </div>
