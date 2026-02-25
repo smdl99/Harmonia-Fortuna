@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--primary);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-cursor: var(--cursor);
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --bg: #f6f6f6;
+  --primary: #000000;
+  --secondary: #161616;
+  --muted: #3b3b3b;
+  --cursor: #777;
+}
+
+.dark {
+  --bg: #0f0f0f;
+  --primary: #ffffff;
+  --secondary: #919191;
+  --muted: #6e6e6e;
+  --cursor: #aaa;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-extralight transition-colors duration-300 cursor-none overflow-x-hidden;
+  }
+
+  body.rtl {
+    direction: rtl;
+  }
+
+  .prose {
+    line-height: 1.9;
+  }
+
+  .prose h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 55px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+  .prose p {
+    margin-bottom: 18px;
+  }
+  .prose ul {
+    list-style-position: outside;
+    padding-left: 18px;
+    margin: 10px 0 22px 0;
+    list-style: disc;
+  }
+  .prose li {
+    margin-bottom: 8px;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes subtleShift {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.08);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}

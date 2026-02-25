@@ -1,6 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+'use client';
 
-export default function Pong() {
+import { useEffect, useRef } from 'react';
+
+interface PongProps {
+  theme: 'dark' | 'light';
+}
+
+export default function Pong({ theme }: PongProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -36,7 +42,7 @@ export default function Pong() {
       vx: number;
       vy: number;
     }[] = [];
-    let mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
+    const mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
 
     function onMouseMove(e: MouseEvent) {
       if (!canvas) {
@@ -110,7 +116,7 @@ export default function Pong() {
           if (distSq < MAX_DIST_SQ) {
             const alpha = 0.28 * (1 - distSq / MAX_DIST_SQ);
             ctx.strokeStyle =
-              gameColor === '#000000'
+              theme !== 'dark'
                 ? `rgba(0,0,0,${alpha})`
                 : `rgba(242,242,242,${alpha})`;
             ctx.lineWidth = 1.2;
@@ -139,7 +145,7 @@ export default function Pong() {
     return () => {
       canvas.removeEventListener('mousemove', onMouseMove);
     };
-  }, []);
+  }, [theme]);
 
   return (
     <div className="w-65 aspect-3/2 relative mb-8">

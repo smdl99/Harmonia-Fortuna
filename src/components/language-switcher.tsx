@@ -1,23 +1,24 @@
-import React, { useEffect } from 'react';
+'use client';
+
 import Button from './ui/button';
 import { cn } from '../utils/cn';
-import { useTranslation } from 'react-i18next';
+import { setLanguageAction } from '@/actions/set-language.action';
+import { useRouter } from 'next/navigation';
 
-export default function LanguageSwitcher() {
-  const { i18n } = useTranslation();
+interface LanguageSwitcherProps {
+  language: string;
+}
 
-  const changeLanguage = (value: string) => {
-    i18n.changeLanguage(value);
+const baseClassName = 'text-xs';
+const activeClassName = 'text-primary after:bg-primary';
+
+export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
+  const router = useRouter();
+
+  const changeLanguage = async (value: string) => {
+    setLanguageAction(value);
+    router.refresh();
   };
-
-  const { language } = i18n;
-
-  useEffect(() => {
-    document.body.classList.toggle('rtl', language === 'ar');
-  }, [language]);
-
-  const baseClassName = 'text-xs';
-  const activeClassName = 'text-primary after:bg-primary';
 
   return (
     <div className="flex gap-2">

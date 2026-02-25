@@ -1,11 +1,6 @@
 import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
-  if (typeof window === 'undefined') {
-    return clsx(inputs);
-  }
-
-  console.log('Import tailwindcss');
-  const { twMerge } = require('tailwind-merge');
   return twMerge(clsx(inputs));
 }

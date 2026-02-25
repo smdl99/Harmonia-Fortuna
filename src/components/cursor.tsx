@@ -1,16 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+'use client';
 
-const lastMousePosition = {
-  x: window.innerWidth / 2,
-  y: window.innerHeight / 2,
-};
+import { useEffect, useRef } from 'react';
 
 export default function Cursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let cx = lastMousePosition.x,
-      cy = lastMousePosition.y,
+    let cx = window.innerWidth / 2,
+      cy = window.innerHeight / 2,
       tx = cx,
       ty = cy;
 
@@ -31,8 +28,6 @@ export default function Cursor() {
 
       cx += (tx - cx) * 0.15;
       cy += (ty - cy) * 0.15;
-      lastMousePosition.x = cx;
-      lastMousePosition.y = cy;
 
       cursor.style.left = cx + 'px';
       cursor.style.top = cy + 'px';

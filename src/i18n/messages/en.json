@@ -1,0 +1,72 @@
+{
+  "index": {
+    "subtitle": "Alternative Asset Management",
+    "enter": "Enter"
+  },
+  "menu": {
+    "about": "About",
+    "contact": "Inquiries",
+    "philanthropy": "Philanthropy",
+    "login": "Login",
+    "ny": "New York",
+    "gn": "Geneva",
+    "hk": "Hong Kong"
+  },
+  "login": {
+    "title": "Login",
+    "form": {
+      "username": {
+        "placeholder": "Username"
+      },
+      "password": {
+        "placeholder": "Password"
+      },
+      "submit": "Login"
+    }
+  },
+  "about": {
+    "title": "About",
+    "text": "Harmonia Fortuna is an innovative alternative asset management firm dedicated to harnessing unique investment opportunities across diverse sectors. With our headquarters in Switzerland, we are committed to excellence and transparency in all our activities.<br></br><br></br>Our Investment Philosophy<br></br><br></br>At Harmonia Fortuna, we excel in identifying investments that not only offer high returns but also contribute positively to society and the environment. Our focus is on building a portfolio of resilient assets that generate sustainable cash flows, employing rigorous analysis and strategic foresight. We pride ourselves on our ability to navigate complex investment landscapes, leveraging our comprehensive expertise in due diligence, risk management, and asset valuation.<br></br><br></br>Expertise and Capabilities<br></br><br></br>Our team consists of seasoned professionals with diverse backgrounds in finance, real estate, renewable energy, and technology. Together, we bring a wealth of experience in structuring and managing multifaceted projects that align with long-term growth and stability. We engage in strategic partnerships and collaborations with industry leaders, government entities, and non-profits to ensure our investments create enduring value.<br></br><br></br>Global Reach, Local Insight<br></br><br></br>While our focus is global, with an eye on emerging markets and developed regions alike, we strategically target areas characterized by strong economic fundamentals and geopolitical stability. Our investment strategy prioritizes jurisdictions that foster growth and innovation, enabling us to create tailored capital solutions that cater to our clients’ diverse needs.<br></br><br></br>Commitment to Sustainable Growth<br></br><br></br>Harmonia Fortuna is dedicated to the principles of responsible investing, ensuring that our investment decisions align with environmental sustainability and social responsibility. We believe that true financial success should also contribute to the betterment of society, and we strive to integrate ESG (Environmental, Social, and Governance) considerations into our investment framework.<br></br><br></br>Join us at Harmonia Fortuna as we pave the way for a brighter, more prosperous future through strategic investments that harmonize financial growth with social responsibility."
+  },
+  "philanthropy": {
+    "title": "Philanthropy",
+    "text": "At Harmonia Fortuna, our commitment to responsible stewardship extends beyond capital allocation. We recognize that long term prosperity is inseparable from social resilience, environmental sustainability, and equitable opportunity. Philanthropy is a natural extension of our philosophy.<br></br><br></br>We believe that enduring financial success must contribute meaningfully to the communities and ecosystems within which we operate.<br></br><br></br>Our Approach<br></br><br></br>Our philanthropic strategy is guided by the same principles that define our investment discipline: rigor, accountability, partnership, and long term impact.<br></br><br></br>Rather than pursuing short term visibility, we prioritize initiatives capable of generating measurable and sustainable outcomes. We seek to deploy resources thoughtfully, supporting programs that demonstrate structural relevance, operational integrity, and scalable potential.<br></br><br></br>Strategic Areas of Focus<br></br><br></br>Education and Human Capital Development<br></br><br></br>We support initiatives that expand access to high quality education, vocational training, and skills development particularly for underserved populations.<br></br><br></br>Environmental Stewardship<br></br><br></br>Our philanthropic efforts support conservation, renewable energy innovation, and initiatives designed to protect biodiversity and mitigate climate impact.<br></br><br></br>Social Equity and Community Stability<br></br><br></br>We contribute to programs that promote inclusion, social cohesion, and equitable access to opportunity.<br></br><br></br>Institutional Commitment<br></br><br></br>A defined allocation of our annual performance is dedicated to philanthropic initiatives aligned with our core principles.<br></br><br></br>Building a Sustainable Future<br></br><br></br>Through disciplined philanthropy, Harmonia Fortuna seeks to harmonize financial achievement with social contribution and strengthen communities for generations to come."
+  },
+  "contact": {
+    "title": "Business Inquiries",
+    "subtitle": "We serve a limited number of families through bespoke, long-term mandates. For confidential inquiries, please use the form below.",
+    "form": {
+      "fullName": {
+        "placeholder": "Full Name"
+      },
+      "email": {
+        "placeholder": "E-Mail"
+      },
+      "phone": {
+        "placeholder": "Phone"
+      },
+      "message": {
+        "placeholder": "Message"
+      },
+      "consent": {
+        "label": "I agree to be contacted"
+      },
+      "submit": "Send Inquiry",
+      "error": "All fields must be completed correctly.",
+      "coolDown": "Please wait 60 seconds before sending again.",
+      "success": "Inquiry sent successfully."
+    }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "global": {
+    "home": "Home",
+    "back": "Back"
+  }
+}
