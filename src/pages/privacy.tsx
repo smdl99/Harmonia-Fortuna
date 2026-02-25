@@ -1,0 +1,283 @@
+import React from 'react';
+import RootLayout from '../components/root-layout';
+import PageHeader from '../components/page-header';
+import SEO from '../components/seo';
+
+export default function PrivacyPage() {
+  return (
+    <RootLayout>
+      <PageHeader
+        title="Privacy Policy"
+        subtitle="Last updated: 21.02.2026"
+        backHref="/menu"
+      />
+
+      <div className="text">
+        <h2>1. Introduction</h2>
+        <p>
+          Harmonia Fortuna is an alternative asset investment and advisory
+          company.
+        </p>
+
+        <p>
+          We respect your privacy and are committed to protecting personal data
+          in accordance with:
+        </p>
+        <ul>
+          <li>
+            Regulation (EU) 2016/679 (General Data Protection Regulation – GDPR)
+          </li>
+          <li>Applicable EU Member State data protection laws</li>
+        </ul>
+
+        <p>
+          This Privacy Policy explains how we collect, use, store, and protect
+          your personal data when:
+        </p>
+        <ul>
+          <li>You visit our website</li>
+          <li>You contact us</li>
+          <li>You subscribe to communications</li>
+          <li>You engage with us as a prospective or existing investor</li>
+          <li>You enter into contractual discussions</li>
+        </ul>
+
+        <h2>2. Controller Information</h2>
+        <p>The data controller is:</p>
+        <p>
+          Harmonia Fortuna
+          <br />
+          [Registered Address]
+          <br />
+          [Country of Incorporation]
+          <br />
+          Email: privacy@harmoniafortuna.com
+        </p>
+        <p>
+          Harmonia Fortuna determines the purposes and means of processing your
+          personal data.
+        </p>
+
+        <h2>3. Scope of GDPR Application</h2>
+        <p>
+          Although Harmonia Fortuna is not currently regulated as a financial
+          institution, we market our services to investors located in the
+          European Union. Accordingly, pursuant to Article 3 GDPR, we process
+          personal data in compliance with GDPR requirements.
+        </p>
+
+        <h2>4. Categories of Personal Data We Process</h2>
+
+        <p>
+          <strong>A. Website Visitors</strong>
+        </p>
+        <ul>
+          <li>IP address</li>
+          <li>Browser and device information</li>
+          <li>Operating system</li>
+          <li>Date and time of access</li>
+          <li>Referrer URL</li>
+        </ul>
+
+        <p>
+          <strong>B. Prospective and Existing Investors</strong>
+        </p>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Residential address</li>
+          <li>Identification documents (if required)</li>
+          <li>Source of funds information (if required)</li>
+          <li>Tax identification information (if required)</li>
+          <li>Banking details (if transactions occur)</li>
+          <li>Investment preferences and financial profile</li>
+        </ul>
+
+        <p>
+          <strong>C. Business Contacts</strong>
+        </p>
+        <ul>
+          <li>Professional contact details</li>
+          <li>Company affiliation</li>
+          <li>Contractual and transactional information</li>
+        </ul>
+
+        <h2>5. How We Collect Data</h2>
+        <ul>
+          <li>
+            Directly from you (contact forms, emails, meetings, onboarding
+            documents)
+          </li>
+          <li>During due diligence procedures</li>
+          <li>Through cookies and analytics tools</li>
+          <li>
+            From professional advisors or third-party verification providers (if
+            applicable)
+          </li>
+        </ul>
+
+        <h2>6. Purposes and Legal Bases for Processing</h2>
+
+        <p>
+          <strong>6.1 Website Operation</strong>
+        </p>
+        <p>To ensure website functionality, security, and performance.</p>
+        <ul>
+          <li>Art. 6(1)(f) GDPR (legitimate interest)</li>
+        </ul>
+
+        <p>
+          <strong>
+            6.2 Investor Communication and Relationship Management
+          </strong>
+        </p>
+        <p>To:</p>
+        <ul>
+          <li>Respond to inquiries</li>
+          <li>Share investment opportunities</li>
+          <li>Conduct discussions and negotiations</li>
+          <li>Manage ongoing investor relationships</li>
+        </ul>
+        <p>Legal basis:</p>
+        <ul>
+          <li>Art. 6(1)(b) GDPR (pre-contractual or contractual measures)</li>
+          <li>Art. 6(1)(f) GDPR (legitimate interest)</li>
+        </ul>
+
+        <p>
+          <strong>6.3 Due Diligence and Risk Management</strong>
+        </p>
+        <p>Where appropriate, we may conduct due diligence to:</p>
+        <ul>
+          <li>Assess investor suitability</li>
+          <li>Prevent fraud</li>
+          <li>Verify identity</li>
+          <li>Protect our legitimate business interests</li>
+        </ul>
+        <p>Legal basis:</p>
+        <ul>
+          <li>Art. 6(1)(f) GDPR (legitimate interest)</li>
+          <li>Art. 6(1)(c) GDPR where legally required</li>
+        </ul>
+        <p>
+          Note: Although not regulated, we may conduct voluntary compliance
+          checks to mitigate financial and reputational risk.
+        </p>
+
+        <p>
+          <strong>6.4 Marketing Communications</strong>
+        </p>
+        <p>If you subscribe to our newsletter or updates:</p>
+        <p>Legal basis:</p>
+        <ul>
+          <li>Art. 6(1)(a) GDPR (consent)</li>
+        </ul>
+        <p>
+          You may withdraw consent at any time via the unsubscribe link or by
+          contacting us.
+        </p>
+
+        <h2>7. Data Sharing</h2>
+        <p>We may share your data with:</p>
+        <ul>
+          <li>Legal advisors</li>
+          <li>Tax advisors</li>
+          <li>Auditors</li>
+          <li>IT and hosting providers</li>
+          <li>Cloud storage providers</li>
+          <li>Payment service providers</li>
+          <li>Identity verification providers</li>
+        </ul>
+        <p>
+          We ensure appropriate contractual safeguards are in place with all
+          service providers.
+        </p>
+        <p>We do not sell personal data.</p>
+
+        <h2>8. International Transfers</h2>
+        <p>
+          Where personal data is transferred outside the European Economic Area
+          (EEA), we rely on:
+        </p>
+        <ul>
+          <li>European Commission adequacy decisions, or</li>
+          <li>Standard Contractual Clauses (SCCs), or</li>
+          <li>Other legally recognized safeguards</li>
+        </ul>
+
+        <h2>9. Data Retention</h2>
+        <p>We retain personal data:</p>
+        <ul>
+          <li>For the duration of our business relationship</li>
+          <li>
+            For as long as necessary to fulfill the purposes described above
+          </li>
+          <li>
+            For up to 5–10 years where required for legal, tax, or contractual
+            defense purposes
+          </li>
+        </ul>
+        <p>Data is securely deleted or anonymized once no longer required.</p>
+
+        <h2>10. Cookies and Analytics</h2>
+        <p>Our website may use:</p>
+        <ul>
+          <li>Essential cookies (required for functionality)</li>
+          <li>Analytical cookies (subject to consent)</li>
+        </ul>
+        <p>
+          Where required by law, cookies are only placed after obtaining your
+          consent.
+        </p>
+        <p>
+          You may manage cookies through your browser settings or cookie banner.
+        </p>
+
+        <h2>11. Your Rights Under GDPR</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access your personal data</li>
+          <li>Rectify inaccurate data</li>
+          <li>Request erasure</li>
+          <li>Restrict processing</li>
+          <li>Data portability</li>
+          <li>Object to processing</li>
+          <li>Withdraw consent at any time</li>
+          <li>Lodge a complaint with your local data protection authority</li>
+        </ul>
+        <p>To exercise your rights: privacy@harmoniafortuna.com</p>
+
+        <h2>12. Security Measures</h2>
+        <p>
+          We implement appropriate technical and organizational measures,
+          including:
+        </p>
+        <ul>
+          <li>SSL/TLS encryption</li>
+          <li>Access control restrictions</li>
+          <li>Encrypted storage systems</li>
+          <li>Secure communication channels</li>
+          <li>Data minimization principles</li>
+        </ul>
+
+        <h2>13. Automated Decision-Making</h2>
+        <p>
+          Harmonia Fortuna does not conduct automated decision-making or
+          profiling that produces legal effects concerning individuals.
+        </p>
+
+        <h2>14. Updates to This Policy</h2>
+        <p>We may update this Privacy Policy periodically.</p>
+        <p>The current version will always be available on our website.</p>
+      </div>
+    </RootLayout>
+  );
+}
+
+export const Head = () => (
+  <SEO
+    title="Privacy | Harmonia Fortuna"
+    description="Harmonia Fortuna treats personal and institutional information with strict confidentiality and care."
+  />
+);
