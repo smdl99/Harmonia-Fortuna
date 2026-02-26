@@ -37,24 +37,24 @@
     "subtitle": "我们仅为少数家族提供定制化的长期投资委托。若有保密咨询需求，请通过下方表格联系。",
     "form": {
       "fullName": {
-        "placeholder": "Full Name"
+        "placeholder": "姓名"
       },
       "email": {
-        "placeholder": "E-Mail"
+        "placeholder": "电子邮箱"
       },
       "phone": {
-        "placeholder": "Phone"
+        "placeholder": "电话"
       },
       "message": {
-        "placeholder": "Message"
+        "placeholder": "消息"
       },
       "consent": {
-        "label": "I agree to be contacted"
+        "label": "我同意被联系"
       },
-      "submit": "Send Inquiry",
-      "error": "All fields must be completed correctly.",
-      "coolDown": "Please wait 60 seconds before sending again.",
-      "success": "Inquiry sent successfully."
+      "submit": "发送咨询",
+      "error": "所有字段必须正确填写。",
+      "coolDown": "请等待60秒后再发送。",
+      "success": "咨询发送成功。"
     }
   },
   "theme": {

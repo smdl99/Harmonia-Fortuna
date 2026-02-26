@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import TimeItem from '@/components/time-item';
+import AnimatedTrans from '@/components/animated-trans';
 
 export const metadata: Metadata = {
   title: 'Overview | Harmonia Fortuna',
@@ -27,19 +28,27 @@ export default async function MenuPage() {
 
       <nav className="flex gap-2 items-center justify-center mb-4">
         <Button asChild className={btnClassName}>
-          <Link href="/about">{t('menu.about')}</Link>
+          <AnimatedTrans asChild>
+            <Link href="/about">{t('menu.about')}</Link>
+          </AnimatedTrans>
         </Button>
         <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
-          <Link href="/contact">{t('menu.contact')}</Link>
+          <AnimatedTrans asChild>
+            <Link href="/contact">{t('menu.contact')}</Link>
+          </AnimatedTrans>
         </Button>
         <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
-          <Link href="/philanthropy">{t('menu.philanthropy')}</Link>
+          <AnimatedTrans asChild>
+            <Link href="/philanthropy">{t('menu.philanthropy')}</Link>
+          </AnimatedTrans>
         </Button>
         <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
-          <Link href="/login">{t('menu.login')}</Link>
+          <AnimatedTrans asChild>
+            <Link href="/login">{t('menu.login')}</Link>
+          </AnimatedTrans>
         </Button>
       </nav>
 

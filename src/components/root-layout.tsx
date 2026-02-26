@@ -3,6 +3,7 @@ import ThemeSwitcher from './theme-switcher';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { cookies } from 'next/headers';
+import AnimatedTrans from './animated-trans';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -29,12 +30,16 @@ export default async function RootLayout({
       <div className="flex items-center justify-center gap-2">
         {isHomeEnabled && (
           <Button asChild size="sm">
-            <Link href="/">{t('global.home')}</Link>
+            <AnimatedTrans asChild>
+              <Link href="/">{t('global.home')}</Link>
+            </AnimatedTrans>
           </Button>
         )}
         {isMenuEnabled && (
           <Button asChild size="sm">
-            <Link href="/menu">{t('index.enter')}</Link>
+            <AnimatedTrans asChild>
+              <Link href="/menu">{t('index.enter')}</Link>
+            </AnimatedTrans>
           </Button>
         )}
         {(isHomeEnabled || isMenuEnabled) && (

@@ -9,8 +9,8 @@ interface LanguageSwitcherProps {
   language: string;
 }
 
-const baseClassName = 'text-xs';
-const activeClassName = 'text-primary after:bg-primary';
+const baseClassName = 'text-xs opacity-50 transition-opacity';
+const activeClassName = 'opacity-100 text-primary after:bg-primary';
 
 export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
   const router = useRouter();

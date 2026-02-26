@@ -3,6 +3,7 @@ import PageHeader from '@/components/page-header';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import RichText from '@/components/rich-text';
+import AnimatedTrans from '@/components/animated-trans';
 
 export const metadata: Metadata = {
   title: 'Philanthropy | Harmonia Fortuna',
@@ -17,7 +18,9 @@ export default async function Philanthropy() {
     <RootLayout>
       <PageHeader backHref="/menu" title={t('philanthropy.title')} />
 
-      <RichText>{(tags) => t.rich('philanthropy.text', tags)}</RichText>
+      <AnimatedTrans asChild>
+        <RichText>{(tags) => t.rich('philanthropy.text', tags)}</RichText>
+      </AnimatedTrans>
     </RootLayout>
   );
 }

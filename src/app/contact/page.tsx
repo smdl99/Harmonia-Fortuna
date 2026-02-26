@@ -5,6 +5,7 @@ import Button from '@/components/ui/button';
 import Textarea from '@/components/ui/textarea';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
+import AnimatedTrans from '@/components/animated-trans';
 
 export const metadata: Metadata = {
   title: 'Connect | Harmonia Fortuna',
@@ -23,21 +24,26 @@ export default async function ContactPage() {
         subtitle={t('contact.subtitle')}
       />
 
-      <form className="flex flex-col gap-3 w-full">
-        <Input placeholder={t('contact.form.fullName.placeholder')} />
-        <Input placeholder={t('contact.form.email.placeholder')} />
-        <Input placeholder={t('contact.form.phone.placeholder')} />
-        <Textarea placeholder={t('contact.form.message.placeholder')} />
+      <AnimatedTrans asChild>
+        <form className="flex flex-col gap-3 w-full">
+          <Input placeholder={t('contact.form.fullName.placeholder')} />
 
-        <label className="flex items-center gap-2">
-          <input type="checkbox" />
-          <span className="text-sm">{t('contact.form.consent.label')}</span>
-        </label>
+          <Input placeholder={t('contact.form.email.placeholder')} />
 
-        <Button type="submit" variant="outline">
-          {t('contact.form.submit')}
-        </Button>
-      </form>
+          <Input placeholder={t('contact.form.phone.placeholder')} />
+
+          <Textarea placeholder={t('contact.form.message.placeholder')} />
+
+          <label className="flex items-center gap-2">
+            <input type="checkbox" />
+            <span className="text-sm">{t('contact.form.consent.label')}</span>
+          </label>
+
+          <Button type="submit" variant="outline">
+            {t('contact.form.submit')}
+          </Button>
+        </form>
+      </AnimatedTrans>
     </RootLayout>
   );
 }

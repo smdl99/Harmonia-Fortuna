@@ -6,9 +6,15 @@ export default function PageLoader() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    document.body.style.animation =
-      'fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-    document.body.style.animationDelay = '0.6s';
+    const mainElem = document.querySelector<HTMLDivElement>('#main');
+    if (!mainElem) {
+      return;
+    }
+
+    setTimeout(() => {
+      mainElem.style.animation =
+        'fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+    }, 600);
 
     setTimeout(() => {
       setIsVisible(false);

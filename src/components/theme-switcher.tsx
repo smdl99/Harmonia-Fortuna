@@ -4,6 +4,7 @@ import Button from './ui/button';
 import { useTranslations } from 'next-intl';
 import { setThemeAction } from '@/actions/set-theme.action';
 import { useRouter } from 'next/navigation';
+import AnimatedTrans from './animated-trans';
 
 interface ThemeSwitcherProps {
   theme: 'dark' | 'light';
@@ -19,8 +20,10 @@ export default function ThemeSwitcher({ theme }: ThemeSwitcherProps) {
   };
 
   return (
-    <Button type="button" onClick={toggleTheme} size="sm">
-      {theme === 'dark' ? t('theme.light') : t('theme.dark')}
-    </Button>
+    <AnimatedTrans asChild>
+      <Button type="button" onClick={toggleTheme} size="sm">
+        {theme === 'dark' ? t('theme.light') : t('theme.dark')}
+      </Button>
+    </AnimatedTrans>
   );
 }

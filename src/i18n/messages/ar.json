@@ -39,24 +39,24 @@
     "subtitle": "نخدم عدداً محدوداً من العائلات من خلال تفويضات استثمارية مخصصة وطويلة الأجل. للاستفسارات السرية، يرجى استخدام النموذج أدناه.",
     "form": {
       "fullName": {
-        "placeholder": "Full Name"
+        "placeholder": "الاسم الكامل"
       },
       "email": {
-        "placeholder": "E-Mail"
+        "placeholder": "البريد الإلكتروني"
       },
       "phone": {
-        "placeholder": "Phone"
+        "placeholder": "الهاتف"
       },
       "message": {
-        "placeholder": "Message"
+        "placeholder": "الرسالة"
       },
       "consent": {
-        "label": "I agree to be contacted"
+        "label": "أوافق على أن يتم التواصل معي"
       },
-      "submit": "Send Inquiry",
-      "error": "All fields must be completed correctly.",
-      "coolDown": "Please wait 60 seconds before sending again.",
-      "success": "Inquiry sent successfully."
+      "submit": "إرسال الاستفسار",
+      "error": "يجب ملء جميع الحقول بشكل صحيح.",
+      "coolDown": "يرجى الانتظار 60 ثانية قبل الإرسال مرة أخرى.",
+      "success": "تم إرسال الاستفسار بنجاح."
     }
   },
   "theme": {

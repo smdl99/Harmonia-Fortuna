@@ -7,6 +7,7 @@ import { cn } from '@/utils/cn';
 import Cursor from '@/components/cursor';
 import LanguageSwitcher from '@/components/language-switcher';
 import Footer from '@/components/footer';
+import { LanguageStoreProvider } from '@/store/language.store';
 
 const sans = Inter({
   variable: '--font-inter-sans',
@@ -39,19 +40,24 @@ export default async function RootLayout({
         )}
       >
         <NextIntlClientProvider>
-          {/* <Cursor /> */}
+          <LanguageStoreProvider language={locale || 'en'}>
+            {/* <Cursor /> */}
 
-          <div className="min-h-dvh flex flex-col px-4 md:px-8 py-6 overflow-hidden">
-            <div className="grow flex flex-col">
-              <header className="flex justify-end">
-                <LanguageSwitcher language={locale || 'en'} />
-              </header>
+            <div
+              className="min-h-dvh flex flex-col px-4 md:px-8 py-6 overflow-hidden"
+              id="main"
+            >
+              <div className="grow flex flex-col">
+                <header className="flex justify-end">
+                  <LanguageSwitcher language={locale || 'en'} />
+                </header>
 
-              {children}
+                {children}
 
-              <Footer />
+                <Footer />
+              </div>
             </div>
-          </div>
+          </LanguageStoreProvider>
         </NextIntlClientProvider>
       </body>
     </html>

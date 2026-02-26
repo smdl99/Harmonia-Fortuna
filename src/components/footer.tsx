@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Button from './ui/button';
 import Link from 'next/link';
+import AnimatedTrans from './animated-trans';
 
 export default async function Footer() {
   const t = await getTranslations();
@@ -12,11 +13,15 @@ export default async function Footer() {
       </span>
       |
       <Button asChild>
-        <Link href="/privacy">{t('footer.privacy')}</Link>
+        <AnimatedTrans asChild>
+          <Link href="/privacy">{t('footer.privacy')}</Link>
+        </AnimatedTrans>
       </Button>
       |
       <Button asChild>
-        <Link href="/terms">{t('footer.terms')}</Link>
+        <AnimatedTrans asChild>
+          <Link href="/terms">{t('footer.terms')}</Link>
+        </AnimatedTrans>
       </Button>
     </footer>
   );

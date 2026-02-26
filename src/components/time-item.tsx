@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import AnimatedTrans from './animated-trans';
 
 interface TimeItemProps {
   label: string;
@@ -81,7 +82,9 @@ export default function TimeItem({ label, zone }: TimeItemProps) {
 
       <div className="flex flex-col gap-0.5">
         <span className="text-[10px] text-secondary font-medium leading-none">{`${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`}</span>
-        <span className="text-[8px] text-muted leading-none">{label}</span>
+        <AnimatedTrans asChild>
+          <span className="text-[8px] text-muted leading-none">{label}</span>
+        </AnimatedTrans>
       </div>
     </div>
   );
