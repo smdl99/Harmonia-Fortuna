@@ -41,7 +41,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           {/* <Cursor /> */}
 
-          <div className="min-h-screen flex flex-col px-4 md:px-8 py-6 overflow-hidden">
+          <div className="min-h-dvh flex flex-col px-4 md:px-8 py-6 overflow-hidden">
             <div className="grow flex flex-col">
               <header className="flex justify-end">
                 <LanguageSwitcher language={locale || 'en'} />

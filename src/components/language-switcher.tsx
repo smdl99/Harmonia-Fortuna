@@ -32,6 +32,7 @@ export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
       </Button>
       <Button
         type="button"
+        size="sm"
         className={cn(baseClassName, language === 'cn' && activeClassName)}
         onClick={() => changeLanguage('cn')}
       >
@@ -39,6 +40,7 @@ export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
       </Button>
       <Button
         type="button"
+        size="sm"
         className={cn(baseClassName, language === 'ru' && activeClassName)}
         onClick={() => changeLanguage('ru')}
       >
@@ -46,6 +48,7 @@ export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
       </Button>
       <Button
         type="button"
+        size="sm"
         className={cn(baseClassName, language === 'ar' && activeClassName)}
         onClick={() => changeLanguage('ar')}
       >
