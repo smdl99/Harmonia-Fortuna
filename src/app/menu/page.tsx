@@ -13,8 +13,7 @@ export const metadata: Metadata = {
     'A private partnership grounded in discipline, clarity, and long term perspective. Harmonia Fortuna prioritizes continuity and principled relationships.',
 };
 
-const btnClassName =
-  'text-primary after:bg-primary text-base font-medium md:text-xl';
+const btnClassName = 'text-primary after:bg-primary text-sm md:text-lg';
 
 export default async function MenuPage() {
   const t = await getTranslations();
@@ -26,25 +25,25 @@ export default async function MenuPage() {
     <RootLayout isHomeEnabled>
       <Pong theme={theme || 'light'} />
 
-      <nav className="flex gap-2 justify-center mb-4">
+      <nav className="flex gap-2 items-center justify-center mb-4">
         <Button asChild className={btnClassName}>
           <Link href="/about">{t('menu.about')}</Link>
         </Button>
-        <div className="w-px bg-primary h-7" />
+        <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
           <Link href="/contact">{t('menu.contact')}</Link>
         </Button>
-        <div className="w-px bg-primary h-7" />
+        <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
           <Link href="/philanthropy">{t('menu.philanthropy')}</Link>
         </Button>
-        <div className="w-px bg-primary h-7" />
+        <div className="w-px bg-primary h-4" />
         <Button asChild className={btnClassName}>
           <Link href="/login">{t('menu.login')}</Link>
         </Button>
       </nav>
 
-      <p className="text-sm text-secondary text-center mb-8">
+      <p className="text-xs text-secondary text-center mb-8">
         Chemin Jean-Baptiste Vandelle 3A
         <br />
         Lakeside Geneva Building,

@@ -20,8 +20,8 @@ export default function Pong({ theme }: PongProps) {
       return;
     }
 
-    canvas.width = 600;
-    canvas.height = 440;
+    ctx.canvas.width = 400 * 1.5;
+    ctx.canvas.height = 300 * 1.5;
 
     const WIDTH = canvas.width;
     const HEIGHT = canvas.height;
@@ -151,7 +151,7 @@ export default function Pong({ theme }: PongProps) {
     <div className="w-65 aspect-3/2 relative mb-8">
       <canvas
         ref={canvasRef}
-        className="absolute top-1/2 left-1/2 -translate-1/2"
+        className="absolute top-1/2 left-1/2 -translate-1/2 w-[calc(400px*1.5)] h-[calc(300px*1.5)]"
       />
     </div>
   );

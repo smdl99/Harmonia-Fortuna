@@ -19,7 +19,7 @@ export default function ThemeSwitcher({ theme }: ThemeSwitcherProps) {
   };
 
   return (
-    <Button type="button" onClick={toggleTheme}>
+    <Button type="button" onClick={toggleTheme} size="sm">
       {theme === 'dark' ? t('theme.light') : t('theme.dark')}
     </Button>
   );

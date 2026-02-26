@@ -39,7 +39,7 @@ export default async function RootLayout({
         )}
       >
         <NextIntlClientProvider>
-          <Cursor />
+          {/* <Cursor /> */}
 
           <div className="min-h-screen flex flex-col px-4 md:px-8 py-6 overflow-hidden">
             <div className="grow flex flex-col">

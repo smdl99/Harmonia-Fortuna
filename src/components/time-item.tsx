@@ -41,8 +41,8 @@ export default function TimeItem({ label, zone }: TimeItemProps) {
   }, [zone]);
 
   return (
-    <div className="flex items-start gap-2">
-      <svg viewBox="0 0 20 20" className="shrink-0 size-6">
+    <div className="flex items-center gap-2">
+      <svg viewBox="0 0 20 20" className="shrink-0 size-5">
         <circle
           cx="10"
           cy="10"
@@ -79,9 +79,9 @@ export default function TimeItem({ label, zone }: TimeItemProps) {
         />
       </svg>
 
-      <div className="flex flex-col">
-        <span className="text-sm text-secondary font-semibold">{`${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`}</span>
-        <span className="text-xs text-muted">{label}</span>
+      <div className="flex flex-col gap-0.5">
+        <span className="text-sm text-secondary font-medium leading-none">{`${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`}</span>
+        <span className="text-[10px] text-muted leading-none">{label}</span>
       </div>
     </div>
   );

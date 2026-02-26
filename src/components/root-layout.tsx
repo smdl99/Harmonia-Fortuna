@@ -28,17 +28,17 @@ export default async function RootLayout({
 
       <div className="flex items-center justify-center gap-2">
         {isHomeEnabled && (
-          <Button asChild>
+          <Button asChild size="sm">
             <Link href="/">{t('global.home')}</Link>
           </Button>
         )}
         {isMenuEnabled && (
-          <Button asChild>
+          <Button asChild size="sm">
             <Link href="/menu">{t('index.enter')}</Link>
           </Button>
         )}
         {(isHomeEnabled || isMenuEnabled) && (
-          <span className="text-secondary">|</span>
+          <span className="text-secondary text-xs">|</span>
         )}
         <ThemeSwitcher theme={theme || 'light'} />
       </div>
