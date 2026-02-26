@@ -68,6 +68,10 @@
   .prose li {
     margin-bottom: 8px;
   }
+  .prose a {
+    text-decoration: underline;
+    word-break: break-all;
+  }
 }
 
 @keyframes draw {
