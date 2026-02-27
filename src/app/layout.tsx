@@ -4,10 +4,11 @@ import { NextIntlClientProvider } from 'next-intl';
 import './globals.css';
 import { cookies } from 'next/headers';
 import { cn } from '@/utils/cn';
-import Cursor from '@/components/cursor';
 import LanguageSwitcher from '@/components/language-switcher';
 import Footer from '@/components/footer';
 import { LanguageStoreProvider } from '@/store/language.store';
+import AppProvider from '@/components/app-provider';
+import { Toaster } from 'sonner';
 
 const sans = Inter({
   variable: '--font-inter-sans',
@@ -41,22 +42,23 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>
           <LanguageStoreProvider language={locale || 'en'}>
-            {/* <Cursor /> */}
+            <AppProvider>
+              <Toaster position="top-right" />
+              <div
+                className="min-h-dvh flex flex-col px-4 md:px-8 py-6 overflow-hidden"
+                id="main"
+              >
+                <div className="grow flex flex-col">
+                  <header className="flex justify-end">
+                    <LanguageSwitcher language={locale || 'en'} />
+                  </header>
 
-            <div
-              className="min-h-dvh flex flex-col px-4 md:px-8 py-6 overflow-hidden"
-              id="main"
-            >
-              <div className="grow flex flex-col">
-                <header className="flex justify-end">
-                  <LanguageSwitcher language={locale || 'en'} />
-                </header>
+                  {children}
 
-                {children}
-
-                <Footer />
+                  <Footer />
+                </div>
               </div>
-            </div>
+            </AppProvider>
           </LanguageStoreProvider>
         </NextIntlClientProvider>
       </body>

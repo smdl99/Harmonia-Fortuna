@@ -37,23 +37,25 @@
     "subtitle": "We serve a limited number of families through bespoke, long-term mandates. For confidential inquiries, please use the form below.",
     "form": {
       "fullName": {
-        "placeholder": "Full Name"
+        "placeholder": "Full Name",
+        "error": "Full name must be at least 2 characters"
       },
       "email": {
-        "placeholder": "E-Mail"
+        "placeholder": "E-Mail",
+        "error": "Invalid email address"
       },
       "phone": {
         "placeholder": "Phone"
       },
       "message": {
-        "placeholder": "Message"
+        "placeholder": "Message",
+        "error": "Message must be at least 10 characters"
       },
       "consent": {
-        "label": "I agree to be contacted"
+        "label": "I agree to be contacted",
+        "error": "You must agree to be contacted"
       },
       "submit": "Send Inquiry",
-      "error": "All fields must be completed correctly.",
-      "coolDown": "Please wait 60 seconds before sending again.",
       "success": "Inquiry sent successfully."
     }
   },
