@@ -45,7 +45,7 @@ export default async function RootLayout({
             <AppProvider>
               <Toaster position="top-right" />
               <div
-                className="min-h-dvh flex flex-col px-8 py-6 overflow-hidden"
+                className="min-h-dvh flex flex-col px-12 py-6 overflow-hidden"
                 id="main"
               >
                 <div className="grow flex flex-col">
