@@ -12,7 +12,7 @@ import { Toaster } from 'sonner';
 
 const sans = Inter({
   variable: '--font-inter-sans',
-  subsets: ['latin'],
+  subsets: ['latin', 'greek', 'cyrillic'],
   fallback: [
     'ui-sans-serif',
     'system-ui',
