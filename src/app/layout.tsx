@@ -13,6 +13,12 @@ import { Toaster } from 'sonner';
 const sans = Inter({
   variable: '--font-inter-sans',
   subsets: ['latin'],
+  fallback: [
+    'ui-sans-serif',
+    'system-ui',
+    '-apple-system',
+    'BlinkMacSystemFont',
+  ],
 });
 
 export const metadata: Metadata = {
