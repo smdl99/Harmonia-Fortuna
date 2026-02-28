@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     'A private partnership grounded in discipline, clarity, and long term perspective. Harmonia Fortuna prioritizes continuity and principled relationships.',
 };
 
-const btnClassName = 'text-primary after:bg-primary text-sm md:text-lg';
+const btnClassName =
+  'text-primary after:bg-primary text-sm md:text-lg whitespace-nowrap';
 
 export default async function MenuPage() {
   const t = await getTranslations();

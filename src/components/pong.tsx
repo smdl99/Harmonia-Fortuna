@@ -8,6 +8,7 @@ interface PongProps {
 
 export default function Pong({ theme }: PongProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -20,15 +21,21 @@ export default function Pong({ theme }: PongProps) {
       return;
     }
 
-    ctx.canvas.width = 400 * 1.5;
-    ctx.canvas.height = 300 * 1.5;
-
-    const WIDTH = canvas.width;
-    const HEIGHT = canvas.height;
+    const SCALE = 2;
+    const WIDTH = 600;
+    const HEIGHT = 450;
     const NODE_COUNT = 8;
-    const MAX_DIST = 170;
+    const MAX_DIST = 240;
     const MAX_DIST_SQ = MAX_DIST * MAX_DIST;
     const LOOP_DURATION = 30000;
+
+    const SCALED_WIDTH = WIDTH * SCALE;
+    const SCALED_HEIGHT = HEIGHT * SCALE;
+
+    ctx.canvas.style.width = `${WIDTH}px`;
+    ctx.canvas.style.height = `${HEIGHT}px`;
+    ctx.canvas.width = SCALED_WIDTH;
+    ctx.canvas.height = SCALED_HEIGHT;
 
     const nodes: {
       ampX: number;
@@ -42,7 +49,7 @@ export default function Pong({ theme }: PongProps) {
       vx: number;
       vy: number;
     }[] = [];
-    const mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
+    const mouse = { x: SCALED_WIDTH / 2, y: SCALED_HEIGHT / 2 };
 
     function onMouseMove(e: MouseEvent) {
       if (!canvas) {
@@ -50,20 +57,20 @@ export default function Pong({ theme }: PongProps) {
       }
 
       const rect = canvas.getBoundingClientRect();
-      mouse.x = (e.clientX - rect.left) * (WIDTH / rect.width);
-      mouse.y = (e.clientY - rect.top) * (HEIGHT / rect.height);
+      mouse.x = (e.clientX - rect.left) * (SCALED_WIDTH / rect.width);
+      mouse.y = (e.clientY - rect.top) * (SCALED_HEIGHT / rect.height);
     }
 
     for (let i = 0; i < NODE_COUNT; i++) {
       nodes.push({
-        ampX: 60 + Math.random() * 80,
-        ampY: 45 + Math.random() * 70,
+        ampX: 120 + Math.random() * 80,
+        ampY: 90 + Math.random() * 70,
         freqX: 1 + Math.floor(Math.random() * 3),
         freqY: 1 + Math.floor(Math.random() * 3),
         phaseX: Math.random() * Math.PI * 2,
         phaseY: Math.random() * Math.PI * 2,
-        x: WIDTH / 2,
-        y: HEIGHT / 2,
+        x: SCALED_WIDTH / 2,
+        y: SCALED_HEIGHT / 2,
         vx: 0,
         vy: 0,
       });
@@ -76,15 +83,17 @@ export default function Pong({ theme }: PongProps) {
 
       const progress = (timestamp % LOOP_DURATION) / LOOP_DURATION;
       const t = progress * Math.PI * 2;
-      ctx.clearRect(0, 0, WIDTH, HEIGHT);
+      ctx.clearRect(0, 0, SCALED_WIDTH, SCALED_HEIGHT);
 
       const gameColor = getComputedStyle(document.body)
         .getPropertyValue('--primary')
         .trim();
 
       for (const n of nodes) {
-        const targetX = WIDTH / 2 + Math.sin(t * n.freqX + n.phaseX) * n.ampX;
-        const targetY = HEIGHT / 2 + Math.cos(t * n.freqY + n.phaseY) * n.ampY;
+        const targetX =
+          SCALED_WIDTH / 2 + Math.sin(t * n.freqX + n.phaseX) * n.ampX;
+        const targetY =
+          SCALED_HEIGHT / 2 + Math.cos(t * n.freqY + n.phaseY) * n.ampY;
 
         n.vx += (targetX - n.x) * 0.02;
         n.vy += (targetY - n.y) * 0.02;
@@ -92,7 +101,7 @@ export default function Pong({ theme }: PongProps) {
         const dx = n.x - mouse.x;
         const dy = n.y - mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        const radius = 120;
+        const radius = 180;
 
         if (dist > 0 && dist < radius) {
           const force = 1 - dist / radius;
@@ -119,7 +128,7 @@ export default function Pong({ theme }: PongProps) {
               theme !== 'dark'
                 ? `rgba(0,0,0,${alpha})`
                 : `rgba(242,242,242,${alpha})`;
-            ctx.lineWidth = 1.2;
+            ctx.lineWidth = 2;
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -131,7 +140,7 @@ export default function Pong({ theme }: PongProps) {
       ctx.fillStyle = gameColor;
       for (const n of nodes) {
         ctx.beginPath();
-        ctx.arc(n.x, n.y, 4.2, 0, Math.PI * 2);
+        ctx.arc(n.x, n.y, 6, 0, Math.PI * 2);
         ctx.fill();
       }
 
@@ -140,18 +149,20 @@ export default function Pong({ theme }: PongProps) {
 
     requestAnimationFrame(animate);
 
-    canvas.addEventListener('mousemove', onMouseMove);
+    const containerElem = containerRef.current;
+
+    containerElem?.addEventListener('mousemove', onMouseMove);
 
     return () => {
-      canvas.removeEventListener('mousemove', onMouseMove);
+      containerElem?.removeEventListener('mousemove', onMouseMove);
     };
   }, [theme]);
 
   return (
-    <div className="w-65 aspect-3/2 relative mb-8">
+    <div ref={containerRef} className="w-65 aspect-3/2 relative mb-8">
       <canvas
         ref={canvasRef}
-        className="absolute top-1/2 left-1/2 -translate-1/2 w-150 h-112.5"
+        className="absolute top-1/2 left-1/2 -translate-1/2 w-150 h-112.5 pointer-events-none"
       />
     </div>
   );
