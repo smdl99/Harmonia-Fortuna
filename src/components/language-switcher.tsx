@@ -10,7 +10,7 @@ interface LanguageSwitcherProps {
 }
 
 const baseClassName =
-  'text-xs font-regular opacity-50 transition-opacity font-regular';
+  'text-xs font-medium opacity-50 transition-opacity font-regular';
 const activeClassName = 'opacity-100 text-primary after:bg-primary';
 
 export default function LanguageSwitcher({ language }: LanguageSwitcherProps) {
