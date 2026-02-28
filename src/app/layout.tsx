@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Zen_Old_Mincho } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import './globals.css';
 import { cookies } from 'next/headers';
@@ -19,6 +19,11 @@ const sans = Inter({
     '-apple-system',
     'BlinkMacSystemFont',
   ],
+});
+
+const zenOldMincho = Zen_Old_Mincho({
+  variable: '--font-zen-old-mincho',
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -44,6 +49,7 @@ export default async function RootLayout({
           theme === 'dark' && 'dark',
           locale === 'ar' && 'rtl',
           sans.variable,
+          zenOldMincho.variable,
         )}
       >
         <NextIntlClientProvider>
