@@ -5,7 +5,7 @@ import { VariantProps, cva } from 'class-variance-authority';
 
 import { cn } from '@/utils/cn';
 
-const buttonVariants = cva('inline-flex items-center', {
+const buttonVariants = cva('inline-flex items-center cursor-pointer', {
   variants: {
     variant: {
       default:

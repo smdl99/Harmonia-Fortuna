@@ -29,14 +29,14 @@ export default async function RootLayout({
 
       <div className="flex items-center justify-center gap-2">
         {isHomeEnabled && (
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="text-sm">
             <AnimatedTrans asChild>
               <Link href="/">{t('global.home')}</Link>
             </AnimatedTrans>
           </Button>
         )}
         {isMenuEnabled && (
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="text-sm">
             <AnimatedTrans asChild>
               <Link href="/menu">{t('index.enter')}</Link>
             </AnimatedTrans>
