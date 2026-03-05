@@ -21,7 +21,7 @@ export default async function HomePage() {
           Harmonia Fortuna
         </h1>
         <AnimatedTrans asChild>
-          <p className="text-muted">{t('index.subtitle')}</p>
+          <p className="text-muted-foreground">{t('index.subtitle')}</p>
         </AnimatedTrans>
       </div>
       <PageLoader />

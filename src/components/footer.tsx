@@ -7,8 +7,8 @@ export default async function Footer() {
   const t = await getTranslations();
 
   return (
-    <footer className="flex items-center justify-center gap-2 text-[7px] md:text-[10px] text-secondary">
-      <span className="">
+    <footer className="flex items-center justify-center gap-2 text-[7px] md:text-[10px] text-secondary-foreground">
+      <span>
         ©<span>{new Date().getFullYear()}</span> Harmonia Fortuna
       </span>
       |

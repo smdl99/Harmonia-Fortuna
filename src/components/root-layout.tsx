@@ -43,7 +43,7 @@ export default async function RootLayout({
           </Button>
         )}
         {(isHomeEnabled || isMenuEnabled) && (
-          <span className="text-secondary text-xs">|</span>
+          <span className="text-secondary-foreground text-xs">|</span>
         )}
         <ThemeSwitcher theme={theme || 'light'} />
       </div>

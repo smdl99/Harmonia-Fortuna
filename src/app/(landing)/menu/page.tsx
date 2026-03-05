@@ -53,7 +53,7 @@ export default async function MenuPage() {
         </Button>
       </nav>
 
-      <p className="text-xs text-secondary text-center mb-8">
+      <p className="text-xs text-secondary-foreground text-center mb-8">
         Chemin Jean-Baptiste Vandelle 3A
         <br />
         Lakeside Geneva Building,
