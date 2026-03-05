@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { cn } from '@/utils/cn';
 import { LanguageStoreProvider } from '@/store/language.store';
 import AppProvider from '@/components/app-provider';
-import './globals.css';
 
 const sans = Inter({
   variable: '--font-inter-sans',

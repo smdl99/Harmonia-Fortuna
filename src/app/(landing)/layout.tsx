@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import LanguageSwitcher from '@/components/language-switcher';
 import Footer from '@/components/footer';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Harmonia Fortuna | Alternative Asset Management',
