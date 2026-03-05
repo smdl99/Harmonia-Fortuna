@@ -1,6 +1,6 @@
 'use client';
 
-import Button from './ui/button';
+import Button from './landing/button';
 import { cn } from '../utils/cn';
 import { setLanguageAction } from '@/actions/set-language.action';
 import { useRouter } from 'next/navigation';

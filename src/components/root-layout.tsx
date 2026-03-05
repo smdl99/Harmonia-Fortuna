@@ -1,4 +1,4 @@
-import Button from './ui/button';
+import Button from './landing/button';
 import ThemeSwitcher from './theme-switcher';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';

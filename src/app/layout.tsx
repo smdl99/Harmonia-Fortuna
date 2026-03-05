@@ -1,14 +1,11 @@
-import type { Metadata } from 'next';
 import { Inter, Zen_Old_Mincho } from 'next/font/google';
-import { NextIntlClientProvider } from 'next-intl';
-import './globals.css';
 import { cookies } from 'next/headers';
+import { Toaster } from 'sonner';
+import { NextIntlClientProvider } from 'next-intl';
 import { cn } from '@/utils/cn';
-import LanguageSwitcher from '@/components/language-switcher';
-import Footer from '@/components/footer';
 import { LanguageStoreProvider } from '@/store/language.store';
 import AppProvider from '@/components/app-provider';
-import { Toaster } from 'sonner';
+import './globals.css';
 
 const sans = Inter({
   variable: '--font-inter-sans',
@@ -25,12 +22,6 @@ const zenOldMincho = Zen_Old_Mincho({
   variable: '--font-zen-old-mincho',
   weight: ['400', '500', '700'],
 });
-
-export const metadata: Metadata = {
-  title: 'Harmonia Fortuna | Alternative Asset Management',
-  description:
-    'Harmonia Fortuna works alongside a select number of partners, focusing on differentiated opportunities, thoughtful execution, and long term alignment.',
-};
 
 export default async function RootLayout({
   children,
@@ -56,20 +47,7 @@ export default async function RootLayout({
           <LanguageStoreProvider language={locale || 'en'}>
             <AppProvider>
               <Toaster position="top-right" />
-              <div
-                className="min-h-dvh flex flex-col px-12 py-6 overflow-hidden"
-                id="main"
-              >
-                <div className="grow flex flex-col">
-                  <header className="flex justify-end">
-                    <LanguageSwitcher language={locale || 'en'} />
-                  </header>
-
-                  {children}
-
-                  <Footer />
-                </div>
-              </div>
+              {children}
             </AppProvider>
           </LanguageStoreProvider>
         </NextIntlClientProvider>

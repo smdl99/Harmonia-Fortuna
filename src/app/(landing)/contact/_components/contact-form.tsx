@@ -3,9 +3,9 @@
 import { useForm } from 'react-hook-form';
 import z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import Input from '@/components/ui/input';
-import Button from '@/components/ui/button';
-import Textarea from '@/components/ui/textarea';
+import Input from '@/components/landing/input';
+import Button from '@/components/landing/button';
+import Textarea from '@/components/landing/textarea';
 import { useTranslations } from 'next-intl';
 import { useMutation } from '@tanstack/react-query';
 import { submitInquiryAction } from '../_actions/submit-inquiry.action';

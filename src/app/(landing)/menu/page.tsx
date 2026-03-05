@@ -1,6 +1,6 @@
 import RootLayout from '@/components/root-layout';
 import Pong from '@/components/pong';
-import Button from '@/components/ui/button';
+import Button from '@/components/landing/button';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { Metadata } from 'next';

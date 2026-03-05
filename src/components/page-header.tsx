@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Button from './ui/button';
+import Button from './landing/button';
 import { getTranslations } from 'next-intl/server';
 import AnimatedTrans from './animated-trans';
 

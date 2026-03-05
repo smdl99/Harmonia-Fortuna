@@ -1,6 +1,6 @@
 'use client';
 
-import Button from './ui/button';
+import Button from './landing/button';
 import { useTranslations } from 'next-intl';
 import { setThemeAction } from '@/actions/set-theme.action';
 import { useRouter } from 'next/navigation';
