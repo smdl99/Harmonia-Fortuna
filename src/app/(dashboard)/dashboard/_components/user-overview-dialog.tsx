@@ -4,13 +4,13 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 
-export default function AdminProjectDialog() {
+export default function UserOverviewDialog() {
   return (
     <>
       <DialogHeader>
-        <DialogTitle>Project Details</DialogTitle>
+        <DialogTitle>Client Overview</DialogTitle>
         <DialogDescription className="sr-only">
-          Project Details
+          Client Overview
         </DialogDescription>
       </DialogHeader>
     </>

@@ -26,7 +26,7 @@ export default function ClientProjectCard() {
                 View
               </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-225 w-full">
+            <DialogContent>
               <ClientProjectDialog />
             </DialogContent>
           </Dialog>

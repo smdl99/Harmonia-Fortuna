@@ -3,8 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import ManageProjectDialog from './client-project-dialog';
-import AddUserDialog from './add-user-dialog';
+import ManageProjectDialog from './manage-project-dialog';
 
 export default function ProjectCard() {
   return (
@@ -23,7 +22,7 @@ export default function ProjectCard() {
             </Button>
           </DialogTrigger>
           <DialogContent>
-            <AddUserDialog />
+            <ManageProjectDialog />
           </DialogContent>
         </Dialog>
         <Dialog>

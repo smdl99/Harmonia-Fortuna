@@ -1,13 +1,3 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import ClientProjectDialog from './client-project-dialog';
-import { Button } from '@/components/ui/button';
 import ClientProjectCard from './client-project-card';
 
 export default function ClientDashboard() {
@@ -20,7 +10,7 @@ export default function ClientDashboard() {
       <div className="px-14 py-12 grow flex flex-col justify-between">
         <div>
           <h3 className="text-xs text-muted-foreground mb-2">
-            PROJECTS & PORTFOLIOS
+            Projects & Portfolios
           </h3>
           <div className="overflow-auto max-h-54 flex flex-col gap-2">
             <ClientProjectCard />
@@ -29,9 +19,7 @@ export default function ClientDashboard() {
           </div>
         </div>
         <div>
-          <h3 className="text-xs text-muted-foreground mb-2">
-            PROJECTS & PORTFOLIOS
-          </h3>
+          <h3 className="text-xs text-muted-foreground mb-2">Reports</h3>
           <div className="overflow-auto max-h-54 flex flex-col gap-2">
             <ClientProjectCard />
             <ClientProjectCard />

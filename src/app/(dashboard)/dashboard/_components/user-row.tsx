@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { TableCell, TableRow } from '@/components/ui/table';
 import EditUserDialog from './edit-user-dialog';
 import ManageUserDialog from './manage-user-dialog';
+import UserOverviewDialog from './user-overview-dialog';
 
 export default function UserRow() {
   return (
@@ -25,9 +26,16 @@ export default function UserRow() {
       <TableCell>21 Feb 2026</TableCell>
       <TableCell>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm">
-            View
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" size="sm">
+                View
+              </Button>
+            </DialogTrigger>
+            <DialogContent>
+              <UserOverviewDialog />
+            </DialogContent>
+          </Dialog>
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" size="sm">

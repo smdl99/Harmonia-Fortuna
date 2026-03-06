@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
-import { ChevronDown, LogOut, Moon, Plus } from 'lucide-react';
+import { LogOut, Moon, Plus } from 'lucide-react';
 import KYCDialog from '../dashboard/_components/kyc-dialog';
-import CreateUserDialog from '../dashboard/_components/create-user-dialog';
+import AddUserDialog from '../dashboard/_components/add-user-dialog';
 import {
   Select,
   SelectContent,
@@ -20,7 +20,7 @@ export default function Navbar({ isAdmin }: NavbarProps) {
   return (
     <div className="flex justify-between items-center px-12 py-7 border-b">
       <p className="text-xs tracking-widest text-muted-foreground uppercase">
-        Administrative Control Panel
+        {isAdmin ? 'Administrative Control Panel' : 'Client Control Panel'}
       </p>
       <div className="flex items-center gap-3">
         {isAdmin ? (
@@ -33,7 +33,7 @@ export default function Navbar({ isAdmin }: NavbarProps) {
                 </Button>
               </DialogTrigger>
               <DialogContent>
-                <CreateUserDialog />
+                <AddUserDialog />
               </DialogContent>
             </Dialog>
             <Input placeholder="Search client..." className="w-52 h-8" />
