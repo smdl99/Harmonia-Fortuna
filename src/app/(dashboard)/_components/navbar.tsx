@@ -1,9 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { LogOut, Moon, Plus } from 'lucide-react';
+import { LogOut, Moon } from 'lucide-react';
 import KYCDialog from '../dashboard/_components/kyc-dialog';
-import AddUserDialog from '../dashboard/_components/add-user-dialog';
 import {
   Select,
   SelectContent,
