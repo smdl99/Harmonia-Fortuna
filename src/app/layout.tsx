@@ -2,6 +2,7 @@ import { Inter, Zen_Old_Mincho } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { Toaster } from 'sonner';
 import { NextIntlClientProvider } from 'next-intl';
+import { Analytics } from '@vercel/analytics/next';
 import { cn } from '@/utils/cn';
 import { LanguageStoreProvider } from '@/store/language.store';
 import AppProvider from '@/components/app-provider';
@@ -46,6 +47,7 @@ export default async function RootLayout({
           <LanguageStoreProvider language={locale || 'en'}>
             <AppProvider>
               <Toaster position="top-right" />
+              <Analytics />
               {children}
             </AppProvider>
           </LanguageStoreProvider>
