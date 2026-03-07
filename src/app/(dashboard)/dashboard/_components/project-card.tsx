@@ -15,20 +15,13 @@ export default function ProjectCard() {
         </p>
       </div>
       <div className="flex gap-2 mt-auto">
+        <Button variant="outline" size="sm">
+          Edit
+        </Button>
         <Dialog>
           <DialogTrigger asChild>
             <Button variant="outline" size="sm">
-              Add User
-            </Button>
-          </DialogTrigger>
-          <DialogContent>
-            <ManageProjectDialog />
-          </DialogContent>
-        </Dialog>
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button variant="outline" size="sm">
-              Manage
+              Manage Users
             </Button>
           </DialogTrigger>
           <DialogContent>

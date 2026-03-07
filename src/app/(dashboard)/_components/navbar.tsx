@@ -23,22 +23,7 @@ export default function Navbar({ isAdmin }: NavbarProps) {
         {isAdmin ? 'Administrative Control Panel' : 'Client Control Panel'}
       </p>
       <div className="flex items-center gap-3">
-        {isAdmin ? (
-          <>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" size="sm">
-                  <Plus />
-                  Add Client
-                </Button>
-              </DialogTrigger>
-              <DialogContent>
-                <AddUserDialog />
-              </DialogContent>
-            </Dialog>
-            <Input placeholder="Search client..." className="w-52 h-8" />
-          </>
-        ) : (
+        {!isAdmin && (
           <>
             <Dialog>
               <DialogTrigger asChild>

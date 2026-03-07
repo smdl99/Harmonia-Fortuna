@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import {
@@ -20,6 +19,9 @@ import ProjectCard from './project-card';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import CreateProjectDialog from './create-project-dialog';
 import UserRow from './user-row';
+import { Plus } from 'lucide-react';
+import AddUserDialog from './add-user-dialog';
+import { Input } from '@/components/ui/input';
 
 export default function AdminDashboard() {
   return (
@@ -68,47 +70,97 @@ export default function AdminDashboard() {
           </CardContent>
         </Card>
 
-        {/* Filter Bar */}
-        <div className="flex gap-4">
-          <Select defaultValue="all">
-            <SelectTrigger className="w-40">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Status</SelectItem>
-              <SelectItem value="verified">Verified</SelectItem>
-              <SelectItem value="pending">Pending</SelectItem>
-              <SelectItem value="rejected">Rejected</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select defaultValue="commitment">
-            <SelectTrigger className="w-52">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="commitment">Sort by Commitment</SelectItem>
-              <SelectItem value="login">Sort by Last Login</SelectItem>
-            </SelectContent>
-          </Select>
+        <div className="flex flex-col gap-4">
+          <div className="flex gap-2">
+            <Select defaultValue="all">
+              <SelectTrigger className="w-40" size="sm">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Status</SelectItem>
+                <SelectItem value="verified">Verified</SelectItem>
+                <SelectItem value="pending">Pending</SelectItem>
+                <SelectItem value="rejected">Rejected</SelectItem>
+              </SelectContent>
+            </Select>
+            <Select defaultValue="commitment">
+              <SelectTrigger className="w-52" size="sm">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="commitment">Sort by Commitment</SelectItem>
+                <SelectItem value="login">Sort by Last Login</SelectItem>
+              </SelectContent>
+            </Select>
+            <Input placeholder="Search client..." className="w-52 h-8" />
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" size="sm" className="ml-auto">
+                  <Plus />
+                  Add Client
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <AddUserDialog />
+              </DialogContent>
+            </Dialog>
+          </div>
+
+          {/* Clients Table */}
+          <div className="border rounded-xl">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Client</TableHead>
+                  <TableHead>Entity</TableHead>
+                  <TableHead>Commitment</TableHead>
+                  <TableHead>KYC Status</TableHead>
+                  <TableHead>Last Login</TableHead>
+                  <TableHead>Actions</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <UserRow />
+                <UserRow />
+                <UserRow />
+              </TableBody>
+            </Table>
+          </div>
         </div>
 
-        {/* Clients Table */}
+        {/* Partners Table */}
         <div className="border rounded-xl">
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Client</TableHead>
-                <TableHead>Entity</TableHead>
-                <TableHead>Commitment</TableHead>
-                <TableHead>KYC Status</TableHead>
-                <TableHead>Last Login</TableHead>
+                <TableHead>Associate</TableHead>
+                <TableHead>Company</TableHead>
+                <TableHead>Raised Capital</TableHead>
+                <TableHead>Distributed Capital</TableHead>
                 <TableHead>Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <UserRow />
-              <UserRow />
-              <UserRow />
+              <TableRow>
+                <TableCell>Alexander Müller</TableCell>
+                <TableCell>Test Company</TableCell>
+                <TableCell>
+                  <span className="text-muted-foreground mr-1.5">CHF</span>
+                  12,500,000
+                </TableCell>
+                <TableCell>
+                  <span className="text-muted-foreground mr-1.5">CHF</span>
+                  12,500,000
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm">
+                      Edit
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </div>
